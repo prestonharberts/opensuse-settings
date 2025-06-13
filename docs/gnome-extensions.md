@@ -1,0 +1,507 @@
+# GNOME Extensions
+
+Run the following to install GNOME Extensions
+
+```
+sudo dnf install gnome-extensions-app -y
+```
+
+Run `gsettings set org.gnome.shell disable-extension-version-validation true` so incompatible extensions will run with the current GNOME version.
+
+Change the following settings for the Built-In extensions:
+
+- Background Logo: Off
+- Pomodoro: On
+
+ Visit https://extensions.gnome.org, and install the following extensions while changing their settings, as well.
+
+- AATWS - Advanced Alt-Tab Window Switcher by GdH
+  - Common
+    - Behaviour
+      - Search Mode as Default: Off
+      - Delay Switcher Display (ms): 150
+    - Appearance and Content
+      - Tooltip Titles: Show Centered
+      - Tooltip Title Scale (%): 100
+  - Window Switcher
+    - Behavior
+      - Default Filter: All
+      - Minimize Windows Last: Off
+    - Appearance
+      - Show Window Titles: Disabled
+  - App Switcher
+    - Behaviour
+      - Raise First Window Only: On
+      - Include Favorite  (Pinned) Apps: Off
+      - Include Show Apps Icon: Off
+    - Appearance
+      - Hide Window Counter For Single-Window Apps: On
+  - Hotkeys
+    - Custom hotkeys
+      - Switch Filter Mode Termporary: W
+      - Close Window / Quit Application: Q
+    -  Fixed Hotkeys
+      - Up/Down Keys Action: Toggle Single App Mode
+- Alphabetical App Grid by Stuart Hayhurst
+  - General settings
+    - Position of ordered folders: Start
+- ArcMenu by andrew_z
+  - General
+    - Panel Display Options
+      - Position in Panel: Center
+    - General Settings
+      - ArcMenu Hotkey: Shift+Ctrl+Alt+Space
+      - Hide Overview on Startup: On
+  - Menu
+    - Menu Layout: Launcher Menu Layouts > Runner
+    - Menu Theme
+      - Override Theme: On
+      - Menu Themes
+        - Current Theme: Light Blue
+      - Menu Styling
+        - Background Color: #ffffff
+        - Foreground color: #000000
+        - Save the theme as "Light"
+    - Menu Visual Appearance
+      -  Menu Location
+        - Override Menu Rise: On; 8
+    - Runner Layout Tweaks
+      - Font Size: 12
+      - Show Frequent Apps: On
+  - Menu Button
+    - Menu Button Appearance
+      - Display Style: Hidden
+- Autohide Battery by iskin (only if current machine is has a battery)
+- Autohide Volume by t184256
+- Auto Power Profile by dmy3k
+  - On Battery: Power Saver
+- Blur my Shell by aunetx
+  - Pipelines
+    - Default > Manage effects
+      - Native gaussian blur
+        - Brightness: 0.8
+      - Add the Corner effect
+  - Panel
+    - Panel blur
+    - Override background: Off
+    - Disable in overview: Off
+  - Overview
+    - Background blur: Off
+    - Application folder blur: Off
+  - Dash
+    - Dash to Dock blur: Off
+- Burn My Windows by Simme (only if computer will not lag)
+  - Click "Disable All" and enable Glide
+- Caffeine by eon
+  - General
+    - Behavior
+      - Remember state: On
+    - Shortcut
+      - Toggle shortcut: Shift+Super+C
+  - Display
+    - Show status indicator in top panel: Never
+    - Notifications: Off
+- ClipQR by drien (only enable when needed)
+- Color Picker by grroot (only enable when needed)
+- Compiz alike magic lamp effect by hermes83(only if computer will not lag)
+  - Duration (ms): 250
+- Custom Command Toggle by storageb
+  - First go to Configuration, and change "Number of Toggle Buttons" to 4, then close and reopen this extension settings window. Set Them all up like this:
+    - Commands
+      - Toggle OFF command:
+        - Button 1: `steam-16-10-low`
+        - Button 2: `steam-16-10-high`
+        - Button 3: `steam-16-9-low`
+        - Button 4: `steam-16-9-high`
+    - Appearance
+      - Button name:
+        - Button 1: Steam (16:10 L)
+        - Button 2: Steam (16:10 H)
+        - Button 3: Steam (16:9 L)
+        - Button 4: Steam (16:9 H)
+      - Icon: `input-gaming-symbolic`
+    - Toggle Behavior
+      - Button Click Action: Always off
+      - Close Menu After Button Press: On
+- Dash to Dock by michele_g
+  - Comment every line containing `animateLaunch` in `.local/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/appIcons.js`
+  - Position and size
+    - Show the dock on: Choose primary monitor
+    - Intelligent autohide
+      - Autohide
+        - Autohide: Off
+        - Dodge windows: Off
+    - Dock size limit: 80%
+    - Icon size limit: 40 px
+  - Launchers
+      - Button name:
+        - Button 1: Steam (16:10 L)
+        - Button 2: Steam (16:10 H)
+        - Button 3: Steam (16:9 L)
+        - Button 4: Steam (16:9 H)
+      - Icon: `input-gaming-symbolic`
+    - Toggle Behavior
+      - Button Click Action: Always off
+      - Close Menu After Button Press: On
+- Dash to Dock by michele_g
+  - Comment every line containing `animateLaunch` in `.local/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/appIcons.js`
+  - Position and size
+    - Show the dock on: Choose primary monitor
+    - Intelligent autohide
+      - Autohide
+        - Autohide: Off
+        - Dodge windows: Off
+    - Dock size limit: 80%
+    - Icon size limit: 40 px
+  - Launchers
+    - Keep the focused application always visible in the dash: Off
+    - Show Appplications icon: Off
+  - Behavior
+    - Use keyboard shortcuts to activate apps
+      - Number overlay: Off
+      - Show the dock if it is hidden: Off
+      - Shortcut for the options above: Empty
+    - Click action: Minimize or show previews
+      - Shift+Click action: Launch new instance
+      - Middle-Click action: Quit
+      - Shift+Middle-Click action: Quit
+  - Appearance
+    - Shrink the dash: On
+    - Show overview on startup: Off
+    - Customize windows counter indicators: Dot
+    - Customize opacity: Fixed
+    - Opacity: 0%
+  - Unpin all current dock apps, and pin the following apps in order:
+    - Konsole
+    - Firefox
+    - Obsidian
+    - ChatGPT (see Firefox setup)
+    - Todoist
+    - Google Calendar
+    - Foliate
+    - Visual Studio Code
+    - Chrome
+    - Files
+- Date Menu Formatter by Marcin Jakubowski
+  - Formatter: SimpleDateFormat
+  - Pattern: I prefer these options
+    - `EEEE K:mm aaa`
+    - `EEEE K:mm:ss` for seconds
+    - `M·dd·y     h:mm a` to have date as well
+    - `M·d·y     h:mm:ss` to replace AM/PM with seconds
+  - Font size: 11 pt
+- Desktop Icons NG (DING) by rastersoft
+  - Highlight the drop place during Drag'n'Drop: Off
+  - Add an emblem to soft links: Off
+  - Show hidden files: On
+- Disable Workspace Animation by monologique (optional)
+- Focus changer by heartmire
+- Focus by scaryawr
+  - Inactive Opacity: One notch away from the right (use arrow keys to move)
+  - Special Focus Opacity: Full
+- Fullscreen Avoider by noobsai (only use for multiple monitors)
+- GPU profile selector by lori_more
+  - Make sure EnvyControl is installed (see `envycontrol.md`)
+- Gravatar by dsheeler
+  - Enter email, press keyboard shortcut, clear shortcut, and disable plugin until needed again
+- GSConnect by dlandau
+  - Run the following to install the openssl dependency: `sudo dnf install openssl -y`
+  - Name your device
+  - Choose device once connected
+    - Sharing
+      - Desktop
+        - Clipboard Sync
+          - To Device: On
+          - From Device: On
+    - Battery
+      - Low Battery Notification: Off
+    - Advanced
+      - MPRIS: Off
+      - Notifications: Off
+- Hide the dock in overview by Roslax
+- Hide Top Bar by tuxor1337 (currently disabled)
+  - Sensitivity
+    - Show panel when mouse approches edge of the screen: On
+  - Intellihide
+    - Only hide the panel when a window takes the space: Off
+    - Only when the active window takes the space: Off
+- Just Perfection by JustPerfection
+  - Visibility
+    - Activities Button: Off
+    - World Clock: Off
+    - Weather: Off
+    - Events: Off
+    - Search: Off
+    - Show Applications Button: Off
+    - Workspace Popup: Off
+    - Workspace Switcher: Off
+    - Workspaces App Grid: Off
+    - Window Picker Close Button: Off
+    - Window Picker Caption: Off
+    - Ripple Box: Off
+  - Icons
+    - Panel Notification Icon: Off
+    - Power Icon: Off (if on desktop)
+  - Behaviour
+    - Workspace Wraparound
+    - Workspace Peek: Off
+    - Window Demands Attention Focus: On
+    - Double Super to App Grid: Off
+    - Startup Status: Desktop
+  - Customize
+    - Workspace Background Corner Size: 16px
+    - Panel Button Padding Size: 0px
+    - Clock menu position: Right
+    - Clock menu offset: 20
+    - Animation: Slow (No Animation if computer is lagging)
+    - Notification Banner Position: Top End
+- Lock screen background by xiaoguang_wang
+  - Change background
+    - Adjust Radius: 30
+    - Adjust Brightness: 0.65
+    - Picture: Choose same wallpaper but without top bar adjustments
+- Mouse Follows Focus by LeonMatthes (Disable on multi-monitor setups)
+- Media Label and Controls (Mpris Label) by moon-0xff
+  - Panel
+    - Icon
+      - Show source icon: off
+    - Position
+      - Extension place: center
+      - Left padding: 0
+      - Right padding: 0
+  - Label
+    - Hide when paused: Off
+    - Max string length (each field): 150
+    - Button placeholder (can be left empty): Empty
+    - Divider string (you can use spaces): " by "
+    - Visible fields and order: title artist none
+  - Controls
+    - Mouse bindings
+      - Left click action: play/pause
+      - Middle click action: next track
+- Open Bar by x10shun
+  - Auto Theming
+    - Auto-Set Bar, Margins, and Islans BG Alpha: Off
+    - Auto Themes for Dark/Light Modes
+      - Gnome Dark Mode: Light Theme
+      - Gnome Light Mode: Light Theme
+  - Top Bar Properties
+    - Bar Height: 28
+    - Bar Margins: 12.0
+    - Customize Bottom Margin: On
+    - Custom Bottom Margin: 18.0
+    - Apply in Overview: Off
+    - Apply in Fullscreen: Off
+  - Window-Max Bar
+    - Enable Window-Max Bar: On
+    - Bar BG Alpha (WMax): 0.80
+    - Customize Bar Height?: On
+    - Bar Height (WMax): Customize this to liking, it's different for every screen (I use 0.0 on 4k and 1.6 on 1600x1200)
+  - Bar Foreground
+    - Panel Font: SF Pro Text Medium 11 (after following `fonts.md`)
+  - Bar Highlights
+    - Highlight Alpha: 0.15
+    - Horizontal Padding: 0.0
+  - Bar Border
+    - Width: 0.0
+    - Corner Radius: 16
+    - Neon Glow: Off
+- Peek Top Bar on Fullscreen by marcinjahn (currently disabled)
+- Power Profile Switcher by eliapasquali (only if on laptop) (currently disabled)
+  - Default profiles
+    - On AC: Balanced
+    - On battery: Power Saving
+- Quick Settings Tweaks
+  - Widgets
+    - Media Widget: Off
+    - Notifications Widget: Off
+    - Weather Widget: Off
+    - Volume mixer Widget: Off
+  - Toggles
+    - DND Quick Toggle: Off
+  - Layout
+    - Quick Toggles Layout
+      - Ordering and Hiding: On
+        - Mobile Connections: Hide
+        - Bluetooth Tethers: Hide
+        - Night Light: Hide
+        - Dark Style: Hide
+        - Keyboard Backlight: Hide
+        - Airplane Mode: Hide
+    - System Indicators
+      - Accent screen sharing indicator: On
+      - Accent screen recording indicator: On
+      - Privacy indicators style: Accent 
+- Quick Settings Audio Devices Hider by marcinjahn
+  - Outputs
+    - Output Audio Devices
+      - Easy Effects Sink: Off
+      - Digital Output (S/PDIF) - FiiO BTR7: Off
+      - Digital Output (S/PDIF) - KT USB Audio: Off
+      - Handsfree - Preston's Buds: Off
+      - Headphones / Line 1-2 - Scarlett Solo (3rd Gen.): Off
+  - Inputs
+    - Input Audio Devices
+      - Easy Effects Source: Off
+      - Direct Scarlett Solo USB - Scarlett Solo (3rd Gen.): Off
+      - Handsfree - Preston's Buds: Off
+      - Input 2 Inst/Line - Scarlett Solo (3rd Gen.): Off
+      - Input 1 Mic - Scarlett Solo (3rd Gen.): Off
+- Quick Settings Audio Device Renamer by marcinjahn
+  - Outputs
+    - Output Audio Devices
+      - HDMI / DisplayPort - GP108 High Definition Audio Controller: HDMI Device
+      - HDMI / DisplayPort - Built-in Audio: 
+      - Speakers - Built-in Audio: Dell XPS
+      - Speakers - Built-in Audio: Dell OptiPlex
+      - Direct Scarlett Solo USB - Scarlett Solo (3rd Gen.): Scarlett Solo USB
+      - Analog Output - FiiO BTR7: FiiO BTR7
+      - Headphones - Built-in Audio: Headphone Out
+      - Headphones - KT USB Audio: KT USB
+      - Headset - Preston's Buds: Preston's Buds
+      - Line Out - Built-in Audio: Line Out
+  - Inputs
+    - Input Audio Devices
+      - Internal Microphone - Built-in Audio: Dell XPS
+      - Rear Microphone - Built-in Audio: Line In
+      - Front Microphone - Built-in Audio: Microphone In
+    - Applications
+    - Respect Do Not Disturb by farodriguess
+- Rounded Corners by lennart-k (disable if using multiple monitors)
+  - General settings
+    - Border radius: 14px
+- Rounded Window Corners Reborn by flexagoon
+  - In case it errors or doesn't work, run `dconf reset -f /org/gnome/shell/extensions/rounded-window-corners-reborn/` in Terminal
+  - General
+    - Applications
+      - Skip LibAdwaita Applications: Off
+    - Global Settings
+      - Border Radius: 14.0
+      - Window Shadow
+        - Focused shadow prefrences
+          - Spread Radius: 6.0
+        - Unfocus Window
+          - Vertical offset: 4.0
+          - Blur radius: 28
+          - Opacity: 60
+      - Keep Rounded Corners when Maximized: On
+- Simple Message by fredz
+  - Write your message: `  Activities`
+- Smart Auto Move by khimaros
+  - General
+    - Match Threshold: 1.00
+    - Activate Workspace: Off
+    - Ignore Workspce: On
+  - Saved Windows
+    - Konsole: OVERRIDE (ANY)
+- Space Bar by luchrioh
+  - Behavior
+    - General
+      - Indicator Style
+        - Custom labe text
+          - Custom label for unnamed workspaces: Workspace
+      - Switch workspaces with scroll wheel: Disabled
+      - Show empty workspaces: Off
+      - Toggle overview: Off
+  - Appearance
+    - General
+      - Workspaces-bar padding: 0
+      - Workspace margin: 0
+    - Active Workspace
+      - Background color: Any color, fully transparent
+      - Text color: #000000
+      - Font size: 11
+      - Font weight: Semi Bold
+      - Border radius: 8
+      - Horizontal padding: 8
+      - Vertical padding: 0
+    - Inactive Workspace
+      - Text color: #606060
+  - Shortcuts
+    - Switch to workspace: Off
+    - Move current workspace left: Disabled
+    - Move current workspace right: Disabled
+    - Switch to empty workspace: Disabled
+    - Open Menu: Disabled
+- Tiling Assistant by Leleat
+  - Edit `.local/share/gnome-shell/extensions/tiling-assistant@leleat-on-github/src/extension/tilingPopup.js` at line 124 so the opacity (which should be `180`) is set to `0`
+  - Tiling Popup
+    - Include apps from all workspaces: On
+  - Tile Groups
+    - Raise together: Off
+  - Gaps
+    - Windows: 8
+    - Screen Edges: 8
+    - Maximized Windows
+  - Dynamic Keybinding Behavior
+    - Tiling State (Windows)
+  - Keybindings
+    - General
+      - Toggle Maximization: `Super-W`
+    - Edge Tiling
+      - Tile to bottom: `Super-S`
+      - Tile to left: `Super-A`
+      - Tile to right: `Super-D`
+    - Corner Tiling
+      - Tile to top-left: Disabled
+      - Tile to top-right: Disabled
+      - Tile to bottom-left: Disabled
+      - Tile to bottom-right: Disabled
+- Top Bar Organizer by June
+  - After installing the Mpris Label extension, move Mpris Label to the beginning of the Center Top Bar Box
+  - Move gnome-pomodoro to be at the beginning of the Left Top Bar Box
+  - Move the dateMenu to be at the end of the Right Top Bar Box
+- Transparent Window Moving by Noobsai (doesn't work with alt dragging)
+  - Opacity (0..255): 230
+  - Aimation time: 0.25
+- True Color Invert
+  - Run `cd ~/.local/share/gnome-shell/extensions && git clone https://github.com/GabePoel/gnome-true-color-invert && mv gnome-true-color-invert true-color-window-invert\@lynet101`
+  - Add support for the latest GNOME version within the folder's `metadata.json` by adding or changing one of the existing values to your GNOME version.
+  - Edit `extension.js`, and adjust `0.1` in `float white_bias = c.a * 0.1; // lower -> higher contrast` to be `0.0` if you want black instead of gray or my preferred `0.22` if you want brighter grays.
+- Unblank lock screen by xiaoguang_wang
+  - Only unblank when on AC: Off
+  - Timeout to blank after locking the screen: 5 minutes
+- Unite by hardpixel
+  - Run the following to download and install: `wget https://github.com/hardpixel/unite-shell/releases/download/v80/unite-v80.zip; gnome-extensions install unite-v80.zip`
+  - Run the following in terminal to hide the close button of every window: `gsettings set org.gnome.desktop.wm.preferences button-layout :`.
+  - General
+    - Layout Tweaks
+      - Extend top bar left box: Off
+    - System Tray
+      - Enable tray: Off
+    - Application Menu
+      - Enable appmenu: Off
+    - Workspace Switcher
+      - Use text button: Off
+      - Hide switcher: Always
+    - Desktop name
+      - Enable desktop name: Off
+      - Desktop name label: Empty
+  - Windows
+    - Behavior
+      - Primary screen only: Off
+      - Auto focus: Off
+      - Panel click actions: Off
+    - Titlebars
+      - Hide window titlebars: Always
+      - Show appmenu title: Never
+    - Buttons
+      - Show buttons: Never
+- User Themes by fmuellner
+- Volume Scroller by francislavoie
+- WSM (Workspace Switcher Manager) by GdH (currently disabled in favor of Space Bar)
+  - Pop-up
+    - Behaviour
+      - On-Screen Time (ms): 200
+  - Size & Text
+    - WS Box Width Scale (%): 120
+    - Text Options
+      - Wrap long App Names: Off
+  - Colors
+    - Pop-up Colors
+      - Background color / opacity: #FFFFFF
+      - Border color / opacity: #DADADA
+      - Active WS Foreground color / opacity: #2F2F2F
+      - Active WS Background color / opacity: #DADADA
+      - Inactive WS Foreground color / opacity: #2F2F2F
+      - Inactive WS Background color / opacity: #FFFFFF

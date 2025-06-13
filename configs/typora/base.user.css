@@ -1,0 +1,89 @@
+body {
+    font-family: "Noto Serif";
+    /*font-size: 1.2rem;*/
+}
+
+#write {
+    padding: 20px 30px 100px 30px;
+}
+
+#write>ul:first-child,
+#write>ol:first-child {
+    margin-top: 12px;
+}
+
+:root {
+    --monospace: "SF Mono";
+}
+
+p {
+    text-align: justify;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.75em;
+    border-bottom: 2px solid #ebebeb;
+    margin-top: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #b3b3b3;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    border-bottom: 2px solid #ebebeb;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.375em;
+}
+
+h4,
+h5,
+h6 {
+    font-style: italic;
+}
+
+h4 {
+    font-size: 1.375em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1.125em;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*.native-window content {
+    right: 4px;
+}
+width: 8px
+}
+::-webkit-scrollbar-track {
+    margin: 10px 0px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: rgba(0, 0, 0, .15);
+    background-clip: unset;
+}*/

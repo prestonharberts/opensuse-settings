@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Flatpak
+
+# Flatpak repository
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+# Security
+flatpak install flathub com.bitwarden.desktop -y
+# Productivity
+flatpak install flathub md.obsidian.Obsidian -y
+flatpak install flathub com.todoist.Todoist -y
+flatpak install flathub fr.free.Homebank -y
+# Development
+flatpak install flathub com.google.AndroidStudio -y
+# Music
+flatpak install flathub io.bassi.Amberol -y
+flatpak install flathub net.puddletag.puddletag -y
+flatpak install flathub org.freac.freac -y
+flatpak install flathub io.github.TheWisker.Cavasik -y
+# Social
+flatpak install flathub com.discordapp.Discord -y
+# Video
+flatpak install flathub org.shotcut.Shotcut -y
+# Ebooks
+flatpak install flathub net.sourceforge.mcomix -y
+
+# Install if needed
+flatpak install me.timschneeberger.GalaxyBudsClient -y
