@@ -104,9 +104,9 @@ gitsetupall() {
 # frequently used commands: software
 alias c='code --password-store=basic'
 
-# frequently used commands: system upgrade
-alias upgrade='sudo dnf upgrade --exclude=kernel* --refresh -y && sudo dnf autoremove -y && flatpak upgrade -y'
-alias upgrade-kernel='sudo dnf upgrade --refresh'
+# frequently used commands: system
+alias update='sudo zypper refresh && sudo zypper update && flatpak upgrade -y'
+alias plasma='killall plasmashell && kstart5 plasmashell'
 
 # frequently used commands: virtual machines
 alias tw='sudo virsh start opensuse && sudo virt-viewer opensuse'

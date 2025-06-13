@@ -1,3 +1,6 @@
+# a fix to allow pasting more than one line
+set enable-bracketed-paste on
+
 # do not bell on tab-completion
 set bell-style none
 

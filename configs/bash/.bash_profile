@@ -6,14 +6,16 @@
 # Load global settings (e.g. for colorized `ls`)
 [ -f /etc/bashrc ] && . /etc/bashrc
 
-# add custom bin directories to PATH
-PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-PATH="/home/prestonharberts/Bin:$PATH"
-PATH="/home/prestonharberts/Bin/flutter/bin:$PATH"
-PATH="/home/prestonharberts/go/bin:$PATH"
-PATH="/home/prestonharberts/perl5/bin${PATH:+:$PATH}"
 # prioritize executables in the current directory
 export PATH=.:$PATH
+
+# add custom bin directories
+PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+PATH="$HOME/Bin:$PATH"
+PATH="$HOME/Bin/flutter/bin:$PATH"
+PATH="$HOME/go/bin:$PATH"
+PATH="$HOME/perl5/bin:$PATH"
+PATH="$HOME/.npm-global/bin:$PATH"
 
 # set perl environment variables
 PERL5LIB="/home/prestonharberts/perl5/lib/perl5${PERL5LIB:+:$PERL5LIB}"
