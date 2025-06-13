@@ -105,7 +105,10 @@
         - Window activation policy: Focus follows mouse
       - Window Actions
         - Modifier key: Alt
+          - Mouse wheel: Move to previous/next desktop
       - Advanced
+        - Window placement
+          - Allow apps to remember the positions of their own windows, if they support it
         - Virtual Desktop Behavior: Bring window to current Virtual Desktop
     - Task Switcher
       - Main
@@ -131,7 +134,15 @@
         - Description: krunner position
         - Window class: krunner
         - Add Property
-          - Position: Make aligned center and to top of floating window with gap (Force 1157x94 for 3456x2160 screen)
+          - Position: Force; (Manually make position aligned to the center and to the top of a floating window with gap. Come back to this step later if need be; if 3456x2160 resolution, do 1157x94)
+      - Add New
+        - Description: krunner position
+        - Window class: krunner
+        - Add Property
+          - Position: Apply initially; (if 3456x2160 resolution, do 864x360)
+          - Size: Apply initially; (if 3456x2160 resolution, do 1728x1440)
+          - Maximized horizontally: Apply initially; No
+          - Maximized vertically: Apply initially; No
       - Add New
         - Description: panel transparency
         - Window class: plasmashell
@@ -206,6 +217,7 @@ Right-click the system tray dropdown in the top bar, and select Configure System
   - Display Configuration: Disabled
   - Keyboard Layout: Disabled
   - Lock Keys Status: Disabled
+  - Microphone: Always hidden
   - Printers: Disabled
   - Power and Battery: Disabled (only if on desktop)
   - Clipboard: Always hidden
