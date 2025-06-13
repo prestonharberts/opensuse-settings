@@ -138,6 +138,7 @@
       - Add New
         - Description: initial window placement
         - Window class: krunner
+        - Window types: Disable everything but Normal window
         - Add Property
           - Position: Apply initially; (if 3456x2160 resolution, do 864x360)
           - Size: Apply initially; (if 3456x2160 resolution, do 1728x1440)
