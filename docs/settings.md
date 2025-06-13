@@ -136,7 +136,7 @@
         - Add Property
           - Position: Force; (Manually make position aligned to the center and to the top of a floating window with gap. Come back to this step later if need be; if 3456x2160 resolution, do 1157x94)
       - Add New
-        - Description: krunner position
+        - Description: initial window placement
         - Window class: krunner
         - Add Property
           - Position: Apply initially; (if 3456x2160 resolution, do 864x360)
