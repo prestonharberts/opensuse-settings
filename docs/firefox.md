@@ -260,17 +260,18 @@ Click the OneTab extension icon, and unpin the newly created tab. Change the fol
 
 Follow the instructions presented by this extension when prompted. Make web apps for the following websites (make sure to select the Default profile for all of these):
 
-- https://app.logos.com
 - https://calendar.google.com/calendar/
-- https://devdocs.io
+- https://youtube.com
 - https://chatgpt.com
+- https://app.logos.com
+- https://devdocs.io
+- https://monkeytype.com/
   - Icon URL: https://img.icons8.com/?size=100&id=FBO05Dys9QCg&format=png&color=000000
 - https://music.youtube.com
 - https://play.qobuz.com (if subscribed)
   - Name: Qobuz
   - Icon URL: https://external-content.duckduckgo.com/ip3/www.qobuz.com.ico
 - https://mail.tutanota.com/mail/
-- https://youtube.com
 - TODO: Add URLs for these too `Crunchyroll, Disney+, Hulu, Max, Netflix, Paramount+, Prime Video, Tubi`
   - Prime video
     - Icon URL: https://img.icons8.com/?size=100&id=mJTj7Q9EPSVn&format=png&color=000000
