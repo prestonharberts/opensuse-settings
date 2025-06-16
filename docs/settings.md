@@ -15,7 +15,7 @@
       - Close Window: `Super-Q`
       - Toggle Overview: `Super-Ctrl-Tab`
       - Peek at Desktop: `Super-R`
-      - Minimize Window: `Super-Shift-S`
+      - Minimize Window: `Super-Shift-C`
       - Move Window to the Center: `Super-C`
       - Switch to Window Above: `Super-K`
       - Switch to Window Below: `Super-J`
@@ -56,6 +56,16 @@
         - Launch: `Super-I`
       - System Monitor
         - Launch: `Super-Shift-Esc`
+      - Add New
+        - Command or Script
+          - Command: unmaximize-window
+          - Name: Unmaximize Window
+          - Keybind: `Super-S`
+      - Add New
+        - Command or Script
+          - Command: unmaximize-window-large
+          - Name: Unmaximize Window (Large)
+          - Keybind: `Super-Shift-S`
   - Sound
     - Volume Controls
       - Raise maximum volume: On
@@ -99,6 +109,9 @@
     - Window title: SF Pro Text 10pt
     - Sub-pixel rendering: (None if on CRT)
 - Apps & Windows
+  - Default Applications
+    - File Associations
+      - epub: Move Foliate to top
   - Window Management
     - Window Behavior
       - Focus
