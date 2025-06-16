@@ -1,6 +1,6 @@
 # openSUSE Settings
 
-This is my openSUSE Linux configuration with all my installed apps and how to configure them. Here I also keep track of what commands and system files I run or edit that change how my environment functions.
+This is my openSUSE Tumbleweed Linux configuration with all my installed apps and how to configure them. Here I also keep track of what commands and system files I run or edit that change how my environment functions.
 
 
 All my app settings can be found in the `docs` folder. When something references a config file to copy somewhere, it is most likely referencing a file in `configs`.
