@@ -44,7 +44,10 @@
       - Window to Previous Desktop `Super-[`
       - Window to Next Desktop: `Super-/`
       - Make Window Fullscreen: `Super-F`
-      - Keep Window on All Desktop: `Super+Z`
+      - Capture Rectangular Region: `Super-Z`
+      - Capture Current Monitor: `Super-Shift-Z`
+      - Capture Active Window: `Super-Ctrl-Z`
+      - Keep Window on All Desktop: `Super-Shift-X`
       - Keep Window Above Others: `Super+X`
       - Maximize Window: `Super-W`
       - Window Operations Menu: `Super-Space`

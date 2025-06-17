@@ -3,7 +3,7 @@
 Run the following to install Foliate:
 
 ```
-sudo zypper install foliate
+flatpak --user install flathub com.github.johnfactotum.Foliate -y
 ```
 
 Open a file and change the Font & Layout Settings:
