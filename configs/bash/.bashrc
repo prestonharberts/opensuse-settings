@@ -103,6 +103,8 @@ gitsetupall() {
 
 # frequently used commands: software
 alias c='code --password-store=basic'
+alias keyd='sudo /usr/local/bin/keyd'
+alias editkeyd='sudo vi /etc/keyd/default.conf && sudo /usr/local/bin/keyd reload'
 
 # frequently used commands: system
 alias update='sudo zypper refresh && sudo zypper update && flatpak upgrade -y'
