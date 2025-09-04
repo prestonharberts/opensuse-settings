@@ -261,10 +261,12 @@ Click the OneTab extension icon, and unpin the newly created tab. Change the fol
 Follow the instructions presented by this extension when prompted. Make web apps for the following websites (make sure to select the Default profile for all of these):
 
 - https://calendar.google.com/calendar/
+- https://docs.google.com/document/
 - https://youtube.com
 - https://chatgpt.com
 - https://app.logos.com
 - https://devdocs.io
+- https://notebooklm.google.com/?original_referer=https:%2F%2Fnotebooklm.google%23&pli=1
 - https://monkeytype.com/
   - Icon URL: https://img.icons8.com/?size=100&id=FBO05Dys9QCg&format=png&color=000000
 - https://music.youtube.com
@@ -290,6 +292,9 @@ Install the hide-scrollbars extension by qashto from the Firefox Add-Ons website
 
 Change Firefox's application settings to follow this guide, and then adjust these settings apart from the other settings:
 
+- General
+  - Progressive Web Apps
+    - Display the address bar: Never
 - Privacy & Security
   - Browser Privacy
     - Enhanced Tracking Protection: Standard
@@ -337,6 +342,7 @@ media.ffmpeg.vaapi.enabled = true
 media.ffvpx.enabled = false
 media.rdd-vpx.enabled = false
 extensions.screenshots.disabled = true
+widget.gtk.global-menu.enabled = true
 ```
 
 ### Tutanota
@@ -384,6 +390,7 @@ Also change the following from `about:config`:
 browser.tabs.closeWindowWithLastTab = false
 browser.tabs.insertAfterCurrent = true
 screenshots.browser.component.enabled = false
+widget.gtk.global-menu.enabled = true
 ```
 
 ## DuckDuckGo settings

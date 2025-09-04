@@ -23,9 +23,8 @@
       - Switch to Window Right: `Super-L`
       - Walk Through Windows of Current Application: (if on HHKB `Alt-Esc`)
       - Walk Through Windows of Current Application (Reverse): (if on HHKB `Alt-Shift-Esc`)
-      - Walk Through Windows Alternative: `Ctrl+Alt+Shift+Tab`
-      - Walk through activities: `Super-Tab`
-      - Walk through activities (Reverse): `Super-Shift-Tab`
+      - Walk Through Windows Alternative: `Meta-Tab`
+      - Walk Through Windows Alternative (Reverse): `Meta-Shift-Tab`
       - Quick Tile Window to the Left: `Super-A`
       - Quick Tile Window to the Right: `Super-D`
       - Quick Tile Window to the Top: `Super-Shift-W`
@@ -74,6 +73,9 @@
       - Raise maximum volume: On
       - Play audio feedback for changes to
         - Audio volume: Off
+  - Accessibility
+    - Shake Cursor
+      - Shake cursor to find it: Off
 - Appearance & Style
   - Wallpaper
     - Select wallpaper or add one
@@ -182,21 +184,55 @@
             - Vertical: 0
 - Workspace
   - General Behavior
-    - Clicking files or folders: Opens them
+    - Clicking
+      - Clicking files or folders: Opens them
+    - Drag and Drop
+      - When dragging giles or folders: Move if on the same device
     - Search
       - Plasma Search
         - Configure KRunner
-          - Position on screen: Top
+          - History: Disabled
+        - Favorite Plugins
+          - Desktop Sessions: Off
+          - Ppower: Off
+          - System Settings: Off
+        - Available Plugins
+          - Activities: Off
+          - Bookmarks: Off
+          - Date and Time: Off
+          - Locations: Off
+          - Recent Files: Off
 - Security & Privacy
   - Screen Locking
     - Lock screen automatically: 15 minutes
       - Lock after waking from sleep: Off
+    - Appearance
+      - Show clock: Never
+      - Media controls: Off
+      - Images: Pick same wallpaper as login screen
   - Recent Files
     - Keep history: For 1 month
 - System
   - Session
     - Desktop Session
       - On login, launch apps that were open: When session was manually saved
+  - Power Management
+    - On Battery
+      - Display an Brightness
+        - Dim automatically: 5 minutes
+        - Turn off screen: 10 minutes
+    - Advanced Power Settings
+      - Battery Levels
+        - Low level: 15%
+        - Critical level: 10%
+
+Right-click the Icons-Only Task Manager in the bottom bar, and open the settings. Change the following:
+
+- Behavior
+  - Show only tasks:
+    - From current activity: Off
+  - When panel is hidden:
+    - Unhide when a window wants attention: On
 
 Right-click the top bar, and select Show Panel Configuration. Change the following settings:
 
@@ -265,6 +301,9 @@ Right-click the desktop, and open Desktop and Wallpaper. Change the following se
   - Middle-Button: Application Launcher
 - Location
   - Show: Custom location: For each activity in the activities manager, select `~/Desktop/<activity name>`
+- Icons
+  - When hovering over icons:
+    - Show selection markers: Off
 
 - Yast
   - System

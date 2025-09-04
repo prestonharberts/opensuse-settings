@@ -37,7 +37,7 @@ Now, change the following settings under Configure Konsole:
         - Blinking > Enabled: On
       - Miscellaneous
         - Terminal contents
-          - Margins: 16 px
+          - Margins: 20 px
           -  Window > Show Hint for terminal size after resizing: Off
     - Scrolling
       - Scrollback: 100000 lines
