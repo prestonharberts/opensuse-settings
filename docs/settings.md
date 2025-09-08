@@ -212,6 +212,9 @@
       - Images: Pick same wallpaper as login screen
   - Recent Files
     - Keep history: For 1 month
+- Language & Time
+  - Date & Time
+    - Set date and time automatically: On
 - System
   - Session
     - Desktop Session
