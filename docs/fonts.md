@@ -12,6 +12,14 @@ cp SF* ~/.local/share/fonts/ -r
 fc-cache -v -f
 ```
 
+## EB Garamond
+
+Download the EB Garamond fonts from [here](https://fonts.google.com/specimen/EB+Garamond). Extract the download, and move the `.ttf` files to `~/.local/share/fonts`, then run the following:
+
+```
+fc-cache -f -v
+```
+
 ## Times New Roman and Microsoft fonts
 
 To install Times New Roman and other Microsoft fonts, run the following:

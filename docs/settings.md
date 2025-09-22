@@ -3,11 +3,8 @@
     - Scrolling
       - Invert scroll direction (Natural scrolling): On
   - Screen Edges
-    - Top-Left Corner: Activity Manager
-    - Top-Right Corner: Overview
-    - Bottom-Left Corner: Peek at Desktop
-    - Bottom-Right Corner: Peek at Desktop
-    - Switch desktop on edge: Always enabled
+    - Top-Left Corner: Peek at Desktop
+    - Top-Right Corner: Peek at Desktop
 - Input & Output
   - Keyboard
     - Shortcuts
@@ -290,6 +287,25 @@ Right-click the date/time and select Digital Clock Settings. Change the followin
     - Holidays: On
 
 Install the "mediabar" widget from the "Get New" button, and edit `~/.local/share/plasma/plasmoids/org.kde.mediabar/contents/ui/CompactRepresentation.qml`.
+
+- Find the following:
+
+```
+text: {
+  root.track + (root.artist ? " by " + root.artist : "")
+}
+```
+
+And replace with the following:
+
+```
+text: {
+  var cleanArtist = root.artist ? root.artist.replace(/,.*/, "") : "";
+  var cleanTrack = root.track ? root.track.replace(/ \(.*/, "") : "";
+  cleanTrack = cleanTrack ? cleanTrack.replace(/ - .*/, "") : "";
+  return cleanTrack + (cleanArtist ? " by " + cleanArtist : "");
+}
+```
 
 - Find `text: i18n("No Source")` and remove `No Souce` so it's just empty quotes.
 

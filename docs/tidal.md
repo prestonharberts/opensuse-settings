@@ -13,6 +13,6 @@ Change the following settings from the settings option in the menubar:
   - UI
     - Fixed menubar: Off
   - System
-    - Tray icon: Off
+    - Statis Window Title: On
 - Integrations
   - MPRIS: On

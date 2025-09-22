@@ -112,6 +112,9 @@ Click the Bitwarden extension button, and log in (making sure to check the remem
 
 - Other
 	- Options
+       - Account Security
+         - Vault Timeout
+           - Timeout: 15 minutes
 		- Autofill
           - Autofill suggestions
             - Show autofill suggestions as form fields: Off

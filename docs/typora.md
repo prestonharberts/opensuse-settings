@@ -36,7 +36,7 @@ Activate your license, then change the following settings:
     - Indent Size for Code: 2
     - Default Code Language: Last Used
 - Appearance
-  - Zoom: 120%
+  - Zoom: 83%
   - Status Bar
     - Show status bar: Off
 
