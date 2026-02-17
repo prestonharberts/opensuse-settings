@@ -12,74 +12,74 @@
 - Input & Output
   - Keyboard
     - Shortcuts
-      - Emoji Selector: Disable `Meta-.`
-      - Show Activity Switcher: `Super-Esc`
-      - Close Window: `Super-Q`
-      - Toggle Overview: `Super-Ctrl-Tab`
-      - Peek at Desktop: `Super-R`
-      - Minimize Window: `Super-Shift-C`
-      - Move Window to the Center: `Super-C`
-      - Switch to Window Above: `Super-K`
-      - Switch to Window Below: `Super-J`
-      - Switch to Window Left: `Super-H`
-      - Switch to Window Right: `Super-L`
-      - Walk Through Windows of Current Application: (if on HHKB `Alt-Esc`)
-      - Walk Through Windows of Current Application (Reverse): (if on HHKB `Alt-Shift-Esc`)
-      - Walk Through Windows Alternative: `Meta-Tab`
-      - Walk Through Windows Alternative (Reverse): `Meta-Shift-Tab`
-      - Quick Tile Window to the Left: `Super-A`
-      - Quick Tile Window to the Right: `Super-D`
-      - Quick Tile Window to the Top: `Super-Shift-W`
-      - Quick Tile Window to the Bottom: `Super-Ctrl-S`
-      - Quick Tile Window to the Bottom Left: `Super-Ctrl-A`
-      - Quick Tile Window to the Bottom Right: `Super-Ctrl-D`
-      - Quick Tile Window to the Top Left: `Super-Ctrl-Q`
-      - Quick Tile Window to the Top Right: `Super-Ctrl-E`
-      - Toggle Overview: `Super-Tab`
-      - Move window One Screen Down: `Alt-Super-J`
-      - Move window One Screen to the Left: `Alt-Super-H`
-      - Move window One Screen to the Right: `Alt-Super-L`
-      - Move window One Screen Up: `Alt-Super-K`
-      - Switch to Next Desktop: `Super-'`
-      - Switch to Previous Desktop: `Super-;`
-      - Window to Previous Desktop `Super-[`
-      - Window to Next Desktop: `Super-/`
-      - Make Window Fullscreen: `Super-F`
-      - Capture Rectangular Region: `Super-Z`, `Super+Shift+S`
-      - Capture Current Monitor: `Super-Shift-Z`
-      - Capture Active Window: `Super-Ctrl-Z`
-      - Keep Window on All Desktop: `Super-Shift-X`
-      - Keep Window Above Others: `Super+X`
-      - Maximize Window: `Super-W`
-      - Window Operations Menu: `Super-Space`
+      - Emoji Selector: Disable `Meta+.`
+      - Show Activity Switcher: `Meta+Esc`
+      - Close Window: `Meta+Q`
+      - Toggle Overview: `Meta+Ctrl+Tab`
+      - Peek at Desktop: `Meta+R`
+      - Minimize Window: `Meta+Shift+C`
+      - Move Window to the Center: `Meta+C`
+      - Switch to Window Above: `Meta+K`
+      - Switch to Window Below: `Meta+J`
+      - Switch to Window Left: `Meta+H`
+      - Switch to Window Right: `Meta+L`
+      - Walk Through Windows of Current Application: (if on HHKB `Alt+Esc`)
+      - Walk Through Windows of Current Application (Reverse): (if on HHKB `Alt+Shift+Esc`)
+      - Walk Through Windows Alternative: `Meta+Tab`
+      - Walk Through Windows Alternative (Reverse): `Meta+Shift+Tab`
+      - Quick Tile Window to the Left: `Meta+A`
+      - Quick Tile Window to the Right: `Meta+D`
+      - Quick Tile Window to the Top: `Meta+Shift+W`
+      - Quick Tile Window to the Bottom: `Meta+Ctrl+S`
+      - Quick Tile Window to the Bottom Left: `Meta+Ctrl+A`
+      - Quick Tile Window to the Bottom Right: `Meta+Ctrl+D`
+      - Quick Tile Window to the Top Left: `Meta+Ctrl+Q`
+      - Quick Tile Window to the Top Right: `Meta+Ctrl+E`
+      - Toggle Overview: `Meta+Tab`
+      - Move window One Screen Down: `Alt+Meta+J`
+      - Move window One Screen to the Left: `Alt+Meta+H`
+      - Move window One Screen to the Right: `Alt+Meta+L`
+      - Move window One Screen Up: `Alt+Meta+K`
+      - Switch to Next Desktop: `Meta+'`
+      - Switch to Previous Desktop: `Meta+;`
+      - Window to Previous Desktop `Meta+[`
+      - Window to Next Desktop: `Meta+/`
+      - Make Window Fullscreen: `Meta+F`
+      - Capture Rectangular Region: `Meta+Z`, `Meta+Shift+S`
+      - Capture Current Monitor: `Meta+Shift+Z`
+      - Capture Active Window: `Meta+Ctrl+Z`
+      - Keep Window on All Desktop: `Meta+Shift+X`
+      - Keep Window Above Others: `Meta+X`
+      - Maximize Window: `Meta+W`
+      - Window Operations Menu: `Meta+Space`
       - Krunner
         - Launch: Meta
       - plasmashell
         - Activate Application Launcher: Off
       - System Settings
-        - Launch: `Super-I`
+        - Launch: `Meta+I`
       - System Monitor
-        - Launch: `Ctrl-Shift-Esc`
+        - Launch: `Ctrl+Shift+Esc`
       - Add New
         - Command or Script
           - Command: unmaximize-window
           - Name: Unmaximize Window
-          - Keybind: `Super-S`
+          - Keybind: `Meta+S`
       - Add New
         - Command or Script
           - Command: unmaximize-window-large
           - Name: Unmaximize Window (Large)
-          - Keybind: `Super-Shift-S`
+          - Keybind: `Meta+Shift+S`
       - Add New
         - Command or Script
           - Command: killall plasmashell; flatpak kill com.todoist.Todoist; pkill tresorit; powerprofilesctl set performance
           - Name: killall plasmashell
-          - Keybind: `Super-,`
+          - Keybind: `Meta+,`
       - Add New
         - Command or Script
           - Command: kstart plasmashell
           - Name: kstart plasmashell
-          - Keybind: `Super-.`
+          - Keybind: `Meta+.`
   - Sound
     - Volume Controls
       - Raise maximum volume: On
