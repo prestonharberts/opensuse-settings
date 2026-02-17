@@ -1,5 +1,13 @@
 # Fonts
 
+## Fonts (GNOME - Font Viewer)
+
+Run the following to install Fonts:
+
+```
+flatpak install flathub org.gnome.font-viewer
+```
+
 ## San Francisco fonts
 
 Run the following commands in terminal to install the San Francisco fonts (source: https://github.com/gonzaru/san-francisco-fonts):

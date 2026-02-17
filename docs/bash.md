@@ -38,7 +38,7 @@ Defaults    pwfeedback
 Add this to the end of the file to enable running certain commands without sudo (although this isn't best practice):
 
 ```
-prestonharberts ALL=(ALL) NOPASSWD: /usr/bin/zypper
+prestonharberts ALL=(ALL) NOPASSWD: /usr/bin/zypper refresh, /usr/bin/zypper update, /usr/local/bin/keyd
 ```
 
 ## Forward search

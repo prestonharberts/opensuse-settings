@@ -1,13 +1,18 @@
+# Settings
+
 - Mouse & Touchpad
   - Touchpad
     - Scrolling
       - Invert scroll direction (Natural scrolling): On
   - Screen Edges
-    - Top-Left Corner: Peek at Desktop
+    - Top-Left Corner: Present Windows (All Desktops)
     - Top-Right Corner: Peek at Desktop
+    - Reactivation delay: 0ms
+    - Switch desktop on edge: Only when moving windows
 - Input & Output
   - Keyboard
     - Shortcuts
+      - Emoji Selector: Disable `Meta-.`
       - Show Activity Switcher: `Super-Esc`
       - Close Window: `Super-Q`
       - Toggle Overview: `Super-Ctrl-Tab`
@@ -40,7 +45,7 @@
       - Window to Previous Desktop `Super-[`
       - Window to Next Desktop: `Super-/`
       - Make Window Fullscreen: `Super-F`
-      - Capture Rectangular Region: `Super-Z`
+      - Capture Rectangular Region: `Super-Z`, `Super+Shift+S`
       - Capture Current Monitor: `Super-Shift-Z`
       - Capture Active Window: `Super-Ctrl-Z`
       - Keep Window on All Desktop: `Super-Shift-X`
@@ -54,7 +59,7 @@
       - System Settings
         - Launch: `Super-I`
       - System Monitor
-        - Launch: `Super-Shift-Esc`
+        - Launch: `Ctrl-Shift-Esc`
       - Add New
         - Command or Script
           - Command: unmaximize-window
@@ -65,6 +70,16 @@
           - Command: unmaximize-window-large
           - Name: Unmaximize Window (Large)
           - Keybind: `Super-Shift-S`
+      - Add New
+        - Command or Script
+          - Command: killall plasmashell; flatpak kill com.todoist.Todoist; pkill tresorit; powerprofilesctl set performance
+          - Name: killall plasmashell
+          - Keybind: `Super-,`
+      - Add New
+        - Command or Script
+          - Command: kstart plasmashell
+          - Name: kstart plasmashell
+          - Keybind: `Super-.`
   - Sound
     - Volume Controls
       - Raise maximum volume: On
@@ -84,21 +99,26 @@
           - Window Decoration Style: Off
           - Cursors: Off
           - Splash Screen: Off
-    - Application Style: kvantum (after following `kvantum.md`)
+    - Application Style: Breeze
+      - General
+        - Windows' drag mode: Drag windows from all empty areas
+      - Scrollbars
+        - Top arrow button type: One button
+        - Bottom arrow button type: One button
     - Window Decorations
       - Breeze
+        - General
+          - Title alignment: Center (Full Width)
+          - Draw border on maximized and tiled windows
         - Shadows and Outline
           - Shadow size: Very Large
           - Shadow strength: 45%
-          - Outline intensity: Off
-        - Window-Specific Overrides
-          - Add
-            - Window Identification
-              - Regular expression to match: `.*`
-            - Decoration Options
-              - Hide window title bar: On
+      - Configure Titlebar Buttons
+        - Make the right side have Minimize, Maximize, Close, then a Spacer
+    - Icons
+      - Follow instructions at top of my WhiteSur Icon fork found [here](https://github.com/prestonharberts/WhiteSur-icon-theme)
     - Cursors
-      - Size: (36 if on 200% scaling display)
+      - Size: (48 if on 200% scaling display)
     - Splash Screen
       - Get New
         - openSUSE
@@ -118,17 +138,23 @@
     - Window Behavior
       - Focus
         - Window activation policy: Focus follows mouse
+      - Titlebar Actions
+        - Mouse wheel: Move to previous/next desktop
       - Window Actions
-        - Modifier key: Alt
-          - Mouse wheel: Move to previous/next desktop
+        - Inactive Inner Window Actions
+          - Right click: Activate and raise
+        - Modifier key: Meta
       - Advanced
         - Window placement
           - Allow apps to remember the positions of their own windows, if they support it
-        - Virtual Desktop Behavior: Bring window to current Virtual Desktop
+        - Virtual Desktop Behavior: Switch to that Virtual Desktop
     - Task Switcher
       - Main
         - Visualization
           - Show selected window: Off
+        - Content
+          - Filter windows by
+            - Screens: On; Current Screen
       - Alternative
         - Visualization
           - Show selected window: Off
@@ -138,6 +164,8 @@
             - Activities: Off
     - Desktop Effects
       - Accessibility
+        - Hide Cursor: On
+          - Hide cursor on inactivity: 5 seconds
         - Invert: On
       - Appearance
         - Translucency: On
@@ -170,24 +198,29 @@
         - Window class: plasmashell
         - Add Property
           - Keep above other windows: Force Yes
+    - KWin Scripts
+      - Get New...
+        - Full Opacity Fullscreen by xium
     - Virtual Desktops
-      - Rows: 1
+      - Rows: 4
       - Press Add Desktop twice
       - Options
-        - Navigation wraps around: On
+        - Navigation wraps around: Off
         - Show animation when switching
           - Gap between desktops
             - Horizontal: 0
             - Vertical: 0
 - Workspace
   - General Behavior
+    - Scrolling
+      - Clicking in scrollbar track: Scrolls one page up or down
+      - Prefer smooth scrolling: Off
     - Clicking
-      - Clicking files or folders: Opens them
-    - Drag and Drop
-      - When dragging giles or folders: Move if on the same device
+      - Clicking files or folders: Selects them
     - Search
       - Plasma Search
         - Configure KRunner
+          - Position on screen: Top
           - History: Disabled
         - Favorite Plugins
           - Desktop Sessions: Off
@@ -199,6 +232,26 @@
           - Date and Time: Off
           - Locations: Off
           - Recent Files: Off
+          - Web Search Keywords
+            - Keywords
+              - Amazon - Preferred: On
+                - Keywords: Change `a` to `am`
+              - DuckDuckGo - Preferred: On
+                - Keywords: Remove `d`
+              - Google
+                - Keywords: Remove `g`
+              - Google Maps - Preferred: On
+              - Merriam-Webster Dictionary - Preferred: On
+              - Merriam-Webster Thesaurus - Preferred: On
+                - Keywords: Change `ths` to `thes`
+              - Reddit - Preferred: On
+              - Wiktionary - Preferred: On
+              - Wolfram Alpha - Preferred: On
+            - New...
+              - Name: BibleGateway
+              - URL: `https://www.biblegateway.com/quicksearch/?quicksearch=love&version=HCSB`
+              - Keywords: `bg`
+            - Keyword delimiter: Space
 - Security & Privacy
   - Screen Locking
     - Lock screen automatically: 15 minutes
@@ -217,6 +270,10 @@
     - Desktop Session
       - On login, launch apps that were open: When session was manually saved
   - Power Management
+    - On AC Power
+      - Suspend Session
+        - When inactive: Sleep; Custom; After 60 Minutes
+        - When power button
     - On Battery
       - Display an Brightness
         - Dim automatically: 5 minutes
@@ -267,15 +324,18 @@ Right-click the system tray dropdown in the top bar, and select Configure System
   - Always show all entries (at the bottom of the window): On
   - Brightness and Color: Disabled
   - Camera Indicator: Disabled
+  - Disks & Devices: Always hidden
   - Display Configuration: Disabled
   - Keyboard Layout: Disabled
   - Lock Keys Status: Disabled
+  - Media Player: Disabled
+  - Notifications: Shown when relevant
   - Microphone: Always hidden
   - Printers: Disabled
   - Power and Battery: Disabled (only if on desktop)
+  - Solaar: Always hidden
   - Clipboard: Always hidden
   - Input Method: Disabled
-  - Notifications: Always hidden
 
 Right-click the date/time and select Digital Clock Settings. Change the following settings:
 
@@ -391,3 +451,30 @@ Run the following to give it execution privileges:
 ```
 chmod u+x ~/.config/autostart/set-startup-workspace.desktop
 ```
+
+## Fingerprints
+
+Run the following to setup fingerprint enrollment:
+
+```
+fprintd-enroll
+sudo pam-config --update --fprintd
+```
+
+Edit the sudoers file by running `sudo visudo` and commenting the following lines:
+
+
+```
+# Defaults targetpw
+# ALL ALL=(ALL) ALL
+```
+
+And uncommenting the following line:
+
+```
+%wheel ALL=(ALL) ALL
+```
+
+Log out and back in.
+
+Open KWalletManager, and change password to be empty.

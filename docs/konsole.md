@@ -57,6 +57,7 @@ Now, change the following settings under Configure Konsole:
       - Use user-defined stylesheet: Move the CSS file in `configs/konsole` to `~/.local/share/konsole` and select it for this field
   - Behavior
     - Put new tabs: After current tab
+    - Miscellaneous: Close tab on middle-click: On
   - This section may need to be completed one more time becuase it resets after exiting
 
 Edit the following keyboard shortcuts from Configure Keyboard Shortcuts:

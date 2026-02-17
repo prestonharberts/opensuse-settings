@@ -9,19 +9,19 @@ QTabBar::tab {
   font-family: "SF Mono";
   font-size: 10pt;
   color: #323232;
-  background-color: rgba(235, 235, 235, 0.4);
+  background-color: #ffffff;
   height: 28px;
   padding: 1px;
   border: 0px;
   border-bottom: 1px solid;
-  border-color: rgba(30, 30, 30, 0.1);
+  border-color: #d7d7d7;
 }
 
 QTabBar::tab:selected {
   /*background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #1e5799, stop: 0.01 #2989d8, stop: 0.11 rgb(205, 205, 205));*/
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: #e1e1e2;
 }
 
 QTabBar::tab:hover {
-  background-color: #f8f8f8;
+  background-color: #eeeeee;
 }

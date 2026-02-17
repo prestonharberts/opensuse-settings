@@ -1,5 +1,8 @@
 -- keybindings
 
+-- text and typing
+
+
 -- use ctrl-q instead of ctrl-w for window commands
 vim.keymap.set('', '<C-q>', '<C-w>', { noremap = true, silent = true })
 vim.keymap.set('i', '<C-q>', '<C-w>', { noremap = true, silent = true })
@@ -85,7 +88,7 @@ vim.api.nvim_create_autocmd({ "CmdlineLeave", "BufEnter", "ModeChanged" }, {
       vim.defer_fn(function()
         if vim.fn.getcmdline() == "" then
           local mode_map = {
-            n = "normal", i = "insert", v = "visual", V = "visual line",
+            n = " ✅ normal", i = " 🔴 insert", v = " 🔷 visual", V = "🔷 visual line",
             [""] = "visual block", c = "command", R = "replace", s = "select",
           }
           local current_mode = vim.api.nvim_get_mode().mode
@@ -182,25 +185,26 @@ vim.api.nvim_create_autocmd({ "CursorHold", "DiagnosticChanged" }, {
 
 -- plugins
 
-vim.cmd([[
-  call plug#begin('~/.local/share/nvim/plugged')
-  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-  Plug 'neovim/nvim-lspconfig'
-  Plug 'hrsh7th/nvim-cmp'
-  Plug 'hrsh7th/cmp-cmdline'
-  Plug 'hrsh7th/cmp-path'
-  Plug 'hrsh7th/cmp-nvim-lsp'
-  Plug 'hrsh7th/cmp-buffer'
-  Plug 'numToStr/Comment.nvim'
-  Plug 'Mofiqul/adwaita.nvim'
-  call plug#end()
-]])
+local vim = vim
+local Plug = vim.fn['plug#']
+
+vim.call('plug#begin', vim.fn.stdpath('data') .. '/plugged')
+  Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
+  Plug('neovim/nvim-lspconfig')
+  Plug('hrsh7th/nvim-cmp')
+  Plug('hrsh7th/cmp-cmdline')
+  Plug('hrsh7th/cmp-path')
+  Plug('hrsh7th/cmp-nvim-lsp')
+  Plug('hrsh7th/cmp-buffer')
+  Plug('numToStr/Comment.nvim')
+  Plug('Mofiqul/adwaita.nvim')
+vim.call('plug#end')
 
 -- theme and highlights
 
 -- theme
 vim.o.background = "light"
-vim.cmd("colorscheme adwaita")
+vim.cmd('silent! colorscheme adwaita')
 
 -- highlight styles
 vim.api.nvim_set_hl(0, "Normal",        { ctermbg = "NONE", bg = "NONE" })

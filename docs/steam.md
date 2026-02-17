@@ -3,7 +3,7 @@
 Run the following to install Steam and other utilities:
 
 ```
-sudo dnf install steam gamescope xdotool -y
+sudo dnf install steam gamemode gamescope libcap-progs -y
 sudo cp /usr/share/applications/steam.desktop .local/share/applications/
 sudo chown $USER:$USER ~/.local/share/applications/steam.desktop
 ```
