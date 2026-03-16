@@ -12,13 +12,12 @@
 - Input & Output
   - Keyboard
     - Shortcuts
-      - Emoji Selector: Disable `Meta+.`
       - Show Activity Switcher: `Meta+Esc`
       - Close Window: `Meta+Q`
+      - Minimize Window: `Meta+Shift+Q`
       - Toggle Overview: `Meta+Ctrl+Tab`
       - Peek at Desktop: `Meta+R`
-      - Minimize Window: `Meta+Shift+C`
-      - Move Window to the Center: `Meta+C`
+      - Move Window to the Center: `Meta+S`
       - Switch to Window Above: `Meta+K`
       - Switch to Window Below: `Meta+J`
       - Switch to Window Left: `Meta+H`
@@ -29,7 +28,7 @@
       - Walk Through Windows Alternative (Reverse): `Meta+Shift+Tab`
       - Quick Tile Window to the Left: `Meta+A`
       - Quick Tile Window to the Right: `Meta+D`
-      - Quick Tile Window to the Top: `Meta+Shift+W`
+      - Quick Tile Window to the Top: `Meta+Ctrl+W`
       - Quick Tile Window to the Bottom: `Meta+Ctrl+S`
       - Quick Tile Window to the Bottom Left: `Meta+Ctrl+A`
       - Quick Tile Window to the Bottom Right: `Meta+Ctrl+D`
@@ -45,11 +44,9 @@
       - Window to Previous Desktop `Meta+[`
       - Window to Next Desktop: `Meta+/`
       - Make Window Fullscreen: `Meta+F`
-      - Capture Rectangular Region: `Meta+Z`, `Meta+Shift+S`
-      - Capture Current Monitor: `Meta+Shift+Z`
-      - Capture Active Window: `Meta+Ctrl+Z`
-      - Keep Window on All Desktop: `Meta+Shift+X`
-      - Keep Window Above Others: `Meta+X`
+      - Capture Rectangular Region: `Meta+Shift+S`
+      - Keep Window Above Others: `Meta+Shift+W`
+      - Keep Window on All Desktop: `Meta+C`
       - Maximize Window: `Meta+W`
       - Window Operations Menu: `Meta+Space`
       - Krunner
@@ -74,12 +71,12 @@
         - Command or Script
           - Command: killall plasmashell; flatpak kill com.todoist.Todoist; pkill tresorit; powerprofilesctl set performance
           - Name: killall plasmashell
-          - Keybind: `Meta+,`
+          - Keybind: `Meta+Alt+,`
       - Add New
         - Command or Script
           - Command: kstart plasmashell
           - Name: kstart plasmashell
-          - Keybind: `Meta+.`
+          - Keybind: `Meta+Shift+,`
   - Sound
     - Volume Controls
       - Raise maximum volume: On
@@ -108,13 +105,14 @@
     - Window Decorations
       - Breeze
         - General
-          - Title alignment: Center (Full Width)
-          - Draw border on maximized and tiled windows
+          - Title alignment: Left
+          - Draw border on maximized and tiled windows: Off
         - Shadows and Outline
           - Shadow size: Very Large
           - Shadow strength: 45%
       - Configure Titlebar Buttons
         - Make the right side have Minimize, Maximize, Close, then a Spacer
+        - Make the left side have a Spacer
     - Icons
       - Follow instructions at top of my WhiteSur Icon fork found [here](https://github.com/prestonharberts/WhiteSur-icon-theme)
     - Cursors

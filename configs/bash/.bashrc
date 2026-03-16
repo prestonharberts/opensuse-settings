@@ -28,6 +28,15 @@ alias vi='nvim'
 alias killnode='pkill npm; pkill -f "npm start"; pkill -f node'
 alias mdb='sudo systemctl start mariadb'
 
+# frequently used commands: bridging hope
+alias bh='cd ~/Repos/bridginghope'
+alias bhb='cd ~/Repos/bridginghope/backend'
+alias bhbmdb='cd ~/Repos/bridginghope/backend && echo -ne "\033]30;backend\007" && sudo systemctl start mariadb && npm run dev && echo -ne "\033]30;%w\007"'
+alias bhbnpm='cd ~/Repos/bridginghope/backend && echo -ne "\033]30;backend\007" && npm run dev && echo -ne "\033]30;%w\007"'
+alias bhf='cd ~/Repos/bridginghope/frontend'
+alias bhbrdt='cd ~/Repos/bridginghope/backend/redoTable/ && redoTables.sh && cd ~/Repos/bridginghope/frontend'
+alias bhfnpm='cd ~/Repos/bridginghope/frontend && echo -ne "\033]30;frontend\007" && HOST=localhost npm start && echo -ne "\033]30;%w\007"'
+
 # frequently used commands: folder navigation
 alias .obsidian='cd ~/Documents/obsidian/.obsidian/'
 alias bg2ob='cd ~/Repos/biblegateway-to-obsidian/'
@@ -107,8 +116,12 @@ alias keyd='sudo /usr/local/bin/keyd'
 alias editkeyd='sudo vi /etc/keyd/default.conf && sudo /usr/local/bin/keyd reload'
 
 # frequently used commands: system
-alias update='sudo zypper refresh && sudo zypper update && flatpak upgrade -y'
-alias plasma='killall plasmashell && kstart5 plasmashell'
+alias up='sudo zypper refresh; sudo zypper update; flatpak upgrade -y'
+alias dup="sudo zypper refresh; sudo zypper removelock 'kernel-*'; sudo zypper update; sudo zypper dup; sudo zypper addlock 'kernel-*'; flatpak upgrade -y"
+alias fup='flatpak upgrade -y'
+alias plasma='killall plasmashell && kstart plasmashell'
+alias restart-sddm='sudo systemctl restart sddm'
+alias clean-konsole='for i in {1..100}; do echo; done; unclutter &'
 
 # frequently used commands: virtual machines
 alias tw='sudo virsh start opensuse && sudo virt-viewer opensuse'
@@ -130,3 +143,25 @@ p() {
 alias bh='cd ~/Repos/bridginghope-foodpantry && gitsetupall'
 
 export BROWSER="google-chrome --password-store=basic"
+
+clear
+echo
+fastfetch -s title:separator:os:host:kernel:uptime:packages:shell:display:de:wm:cpu:gpu:memory:swap:disl:battery:locale --logo opensuse
+echo
+
+# Steam exFAT SSD Library Paths
+export STEAM_EXT_LIB="/run/media/prestonharberts/ExternalSSD/SteamLibrary/steamapps/"
+export STEAM_LOC_LIB="$HOME/.local/share/Steam/steamapps/"
+
+# Function to fix Steam Library on exFAT
+fix_steam() {
+  # Check if the SSD is actually mounted (Case-Sensitive)
+  if mountpoint -q /run/media/prestonharberts/ExternalSSD; then
+    # Run your specific fix script
+    # Remember to update the path to your .py file below!
+    python3 ~/Bin/steam_library_fix.py
+  else
+    echo "Error: SSD not found at /run/media/prestonharberts/ExternalSSD"
+    echo "Check your capitalization or ensure the drive is mounted."
+  fi
+}
