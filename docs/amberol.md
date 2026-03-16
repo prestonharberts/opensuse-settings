@@ -3,7 +3,7 @@
 Run the following to install Amberol:
 
 ```
-flatpak --user install io.bassi.Amberol -y
+flatpak --user install flathub io.bassi.Amberol -y
 ```
 
 Change the following settings:

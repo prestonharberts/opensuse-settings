@@ -3,7 +3,7 @@
 Run the following to install:
 
 ```
-flatpak install flathub com.bitwarden.desktop
+flatpak --user install flathub com.bitwarden.desktop
 ```
 
 Open Settings, and change the following settings:

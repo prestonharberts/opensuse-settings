@@ -3,7 +3,7 @@
 Run the following to install the GitHub CLI program:
 
 ```
-sudo dnf install gh -y
+sudo zypper -n install gh
 ```
 
 Run the following to setup `gh`:
