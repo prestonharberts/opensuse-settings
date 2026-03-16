@@ -121,11 +121,8 @@ vim.opt.number = true
 vim.opt.numberwidth = 1
 vim.opt.statuscolumn = "%=%{v:virtnum == 0 ? (v:relnum > 0 ? v:relnum : v:lnum) : ' '} "
 vim.opt.statusline = "%-4l%=%f %2p%%%=%4c"
-vim.opt.cmdheight = 1
+vim.opt.cmdheight = 0
 vim.opt.fillchars = 'eob: '
-
--- cursorline highlight
-vim.opt.cursorline = true
 
 -- autoformat before save
 vim.api.nvim_create_autocmd("BufWritePre", {
@@ -203,24 +200,32 @@ vim.call('plug#end')
 -- theme and highlights
 
 -- theme
-vim.o.background = "light"
+vim.o.background = "dark"
 vim.cmd('silent! colorscheme adwaita')
 
 -- highlight styles
-vim.api.nvim_set_hl(0, "Normal",        { ctermbg = "NONE", bg = "NONE" })
-vim.api.nvim_set_hl(0, "StatusLine", { bg = "#FFFFFF", fg = "#000000" })
-vim.api.nvim_set_hl(0, "EndOfBuffer",   { ctermfg = "NONE", ctermbg = "NONE" })
-vim.api.nvim_set_hl(0, "Visual",        { bg = "#CCCCCC" })
-vim.api.nvim_set_hl(0, "CursorLine",    { bg = "#ECECEC" })
-vim.api.nvim_set_hl(0, "Cursor",        { bg = "#1f2328" })
-vim.api.nvim_set_hl(0, "iCursor",       { bg = "#1f2328" })
-vim.api.nvim_set_hl(0, "rCursor",       { bg = "#1f2328" })
+vim.api.nvim_set_hl(0, "Normal",      { ctermbg = "NONE", bg = "NONE" })
+vim.api.nvim_set_hl(0, "EndOfBuffer", { ctermfg = "NONE", ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "Visual",      { bg = "#4d5256" }) 
+vim.api.nvim_set_hl(0, "Cursor",      { bg = "#ffffff" })
+vim.api.nvim_set_hl(0, "iCursor",     { bg = "#ffffff" })
+vim.api.nvim_set_hl(0, "rCursor",     { bg = "#ffffff" })
+
+-- 1. Gutter Transparency
+vim.api.nvim_set_hl(0, "LineNr",       { bg = "NONE", fg = "#5c6370" }) 
+vim.api.nvim_set_hl(0, "SignColumn",   { bg = "NONE" })
+vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "NONE", fg = "#ffffff", bold = true })
+
+-- 2. Status Bar Transparency
+-- bg = "NONE" makes it transparent; fg is kept white so text is visible
+vim.api.nvim_set_hl(0, "StatusLine",   { bg = "NONE", fg = "#ffffff" })
+vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "NONE", fg = "#76787d" })
 
 -- diagnostic highlights
-vim.api.nvim_set_hl(0, "DiagnosticError", { bg = "#FFCCCC", fg = "#000000" })
-vim.api.nvim_set_hl(0, "DiagnosticWarn",  { bg = "#FFF4CC", fg = "#000000" })
-vim.api.nvim_set_hl(0, "DiagnosticInfo",  { bg = "#CCE5FF", fg = "#000000" })
-vim.api.nvim_set_hl(0, "DiagnosticHint",  { bg = "#E6E6FF", fg = "#000000" })
+vim.api.nvim_set_hl(0, "DiagnosticError", { bg = "NONE", fg = "#ff6b6b" })
+vim.api.nvim_set_hl(0, "DiagnosticWarn",  { bg = "NONE", fg = "#f1c40f" })
+vim.api.nvim_set_hl(0, "DiagnosticInfo",  { bg = "NONE", fg = "#3498db" })
+vim.api.nvim_set_hl(0, "DiagnosticHint",  { bg = "NONE", fg = "#8e44ad" })
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline" },

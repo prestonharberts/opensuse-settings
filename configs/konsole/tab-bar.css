@@ -1,33 +1,46 @@
+/* Main background and container areas */
 QWidget,
 QTabWidget::pane,
 QTabWidget::tab-bar {
-  /* A deep, neutral dark gray */
-  background-color: #1e1e1e;
+  background-color: #31363b;
+  /* Matches your Active Titlebar */
 }
 
-QTabBar,
+/* Base Tab Styling */
 QTabBar::tab {
   font-family: "SF Mono";
   font-size: 10pt;
-  /* Off-white for readability without "glow" */
-  color: #d4d4d4;
-  /* Slightly lighter than the pane to show the tab shape */
-  background-color: #2d2d2d;
+  color: #eff0f1;
+  /* Light text for dark background */
+  background-color: #4d5256;
+  /* Matches your Inactive Titlebar */
   height: 28px;
-  padding: 1px;
+  padding: 4px 10px;
+  /* Increased padding for better click targets */
   border: 0px;
-  border-bottom: 1px solid;
-  /* Darker border for a subtle etched look */
-  border-color: #121212;
+  border-bottom: 2px solid #232629;
+  /* Darker accent line for depth */
 }
 
+/* Selected Tab (Active State) */
 QTabBar::tab:selected {
-  /* Brightest gray to indicate focus */
-  background-color: #3e3e3e;
-  color: #ffffff;
+  background-color: #31363b;
+  /* Matches Active Titlebar for a seamless look */
+  color: #3daee9;
+  /* Often used as a highlight blue in dark themes */
+  border-bottom: 2px solid #3daee9;
+  /* Highlight underline */
 }
 
-QTabBar::tab:hover {
-  /* Visual feedback when mousing over */
-  background-color: #333333;
+/* Hover State */
+QTabBar::tab:hover: !selected {
+  background-color: #5d6368;
+  /* Slightly lighter than inactive for feedback */
+}
+
+/* Handling the Pane (The content area under the tabs) */
+QTabWidget::pane {
+  border: 1px solid #232629;
+  top: -1px;
+  /* Overlap to prevent double borders */
 }

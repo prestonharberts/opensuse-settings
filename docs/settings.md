@@ -41,8 +41,8 @@
       - Move window One Screen Up: `Alt+Meta+K`
       - Switch to Next Desktop: `Meta+'`
       - Switch to Previous Desktop: `Meta+;`
-      - Window to Previous Desktop `Meta+[`
-      - Window to Next Desktop: `Meta+/`
+      - Window to Previous Desktop `Meta+;`
+      - Window to Next Desktop: `Meta+'`
       - Make Window Fullscreen: `Meta+F`
       - Capture Rectangular Region: `Meta+Shift+S`
       - Keep Window Above Others: `Meta+Shift+W`
@@ -89,13 +89,13 @@
   - Wallpaper
     - Select wallpaper or add one
   - Colors & Themes
-    - Global Theme
-      - WhiteSur-alt (after following `whitesur.md`)
-        - Choose what to apply
-          - Desktop layout: Off
-          - Window Decoration Style: Off
-          - Cursors: Off
-          - Splash Screen: Off
+    - Colors
+      - Colors: Custom accent color; #6dad27
+      - Colors: openSUSE
+        - Edit Color Scheme...
+          - Colors
+            - Active titlebar: #31363b
+            - Inactive titlebar: #4d5256
     - Application Style: Breeze
       - General
         - Windows' drag mode: Drag windows from all empty areas
@@ -109,7 +109,8 @@
           - Draw border on maximized and tiled windows: Off
         - Shadows and Outline
           - Shadow size: Very Large
-          - Shadow strength: 45%
+          - Shadow strength: 75%
+          - Draw window outline: Off
       - Configure Titlebar Buttons
         - Make the right side have Minimize, Maximize, Close, then a Spacer
         - Make the left side have a Spacer
@@ -281,20 +282,12 @@
         - Low level: 15%
         - Critical level: 10%
 
-Right-click the Icons-Only Task Manager in the bottom bar, and open the settings. Change the following:
-
-- Behavior
-  - Show only tasks:
-    - From current activity: Off
-  - When panel is hidden:
-    - Unhide when a window wants attention: On
-
 Right-click the top bar, and select Show Panel Configuration. Change the following settings:
 
-- Position: Top
-- Panel Height: 32
+- Panel Height: 36
+- Floating: Applets only
 
-Add spacer widgets (with flexible size turned off and width set to 10) to the beginning and end of the top bar, as well as between the application launcher/workspace buttons and the workspace buttons/task icons
+Add spacer widgets (with flexible size turned off and width set to 5) to the beginning and end of the top bar, as well as between the Show Activity Manager,Pager buttons, and Icons-Only Task Manager
 
 
 Right-click the application launcher in the top bar, and select Application Launcher Settings. Change the following settings:
@@ -312,8 +305,6 @@ Right-click the workspaces in the top bar, and select Pager Settings. Change the
 
 Right-click the system tray dropdown in the top bar, and select Configure System Tray. Change the following settings:
 
-- General
-  - Panel icon spacing: Small
 - Entries
   - Application Status
     - Bitwarden: Always hidden
@@ -332,7 +323,6 @@ Right-click the system tray dropdown in the top bar, and select Configure System
   - Printers: Disabled
   - Power and Battery: Disabled (only if on desktop)
   - Solaar: Always hidden
-  - Clipboard: Always hidden
   - Input Method: Disabled
 
 Right-click the date/time and select Digital Clock Settings. Change the following settings:
@@ -340,9 +330,6 @@ Right-click the date/time and select Digital Clock Settings. Change the followin
 - Appearance
   - Information
     - Show date: Off
-- Calendar
-  - Available Plugins
-    - Holidays: On
 
 Install the "mediabar" widget from the "Get New" button, and edit `~/.local/share/plasma/plasmoids/org.kde.mediabar/contents/ui/CompactRepresentation.qml`.
 
