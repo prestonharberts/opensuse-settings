@@ -5,6 +5,16 @@ Open Application Menu, and open Settings. Change the following settings:
 - Sync
 	- Sign in
 	- Device Name: Same as device name
+- General
+  - Startup
+    - Open previous windows and tabs: On
+  - Tabs
+    - Open links from apps next to your active tab: On
+  - Browser Layout
+    - Show sidebar: Off
+  - Browsing
+    - Search for text when you start typing: On
+    - Keep playing videos in Picture-in-Picture when switching tabs: On
 - Home
     - New Windows and Tabs
       - Homepage and new windows: Firefox Home (Default)
@@ -51,31 +61,13 @@ Open Application Menu, and open Settings. Change the following settings:
 		- Allow Firefox to send technical and interation data to Mozilla: Off
 		- Allow Firefox to install and run studies: Off
 
-## GNOME Theme
-
-Run the following to install a GNOME theme for Firefox (source: https://github.com/rafaelmardojai/firefox-gnome-theme):
-
-```
-git clone https://github.com/rafaelmardojai/firefox-gnome-theme && cd firefox-gnome-theme
-./scripts/auto-install.sh
-```
-
-Enter `about:config` into the URL bar, and agree to enter. Click the + button for the following setting:
-
-```
-gnomeTheme.hideSingleTab
-gnomeTheme.noThemedIcons
-```
-
 ## Customize Toolbar
 
 Right click empty space on the toolbar (same bar as the search bar), and go to Customize Toolbar. Complete the following actions:
 
 - Insert one additional Flexible Space on both sides of the search bar
 - Remove the Firefox account button
-- Remove the New Tab button next to the open tabs
 - Remove the Homepage button
-- Move the download button to be after the refresh button
 - Put "Save to Pocket" and "Show tabs from other devices" before the extension button
 
 Right click an empty space on the Bookmarks toolbar. Change the following setting:

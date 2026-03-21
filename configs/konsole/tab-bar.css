@@ -18,7 +18,7 @@ QTabBar::tab {
   padding: 4px 10px;
   /* Increased padding for better click targets */
   border: 0px;
-  border-bottom: 2px solid #232629;
+  border-bottom: 1px solid #4d5256;
   /* Darker accent line for depth */
 }
 
@@ -28,7 +28,7 @@ QTabBar::tab:selected {
   /* Matches Active Titlebar for a seamless look */
   color: #3daee9;
   /* Often used as a highlight blue in dark themes */
-  border-bottom: 2px solid #3daee9;
+  border-bottom: 1px solid #3daee9;
   /* Highlight underline */
 }
 

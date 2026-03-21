@@ -9,7 +9,6 @@
 # add custom bin directories to PATH
 PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 PATH="/home/prestonharberts/Bin:$PATH"
-PATH="/home/prestonharberts/Bin/flutter/bin:$PATH"
 PATH="/home/prestonharberts/go/bin:$PATH"
 PATH="/home/prestonharberts/perl5/bin${PATH:+:$PATH}"
 # prioritize executables in the current directory
@@ -31,20 +30,3 @@ if [ -d ~/.bashrc.d ]; then
     [ -f "$rc" ] && . "$rc"
   done
 fi
-
-# enable gcloud SDK and shell completion if installed
-if [ -f "$HOME/.bin/google-cloud-sdk/path.bash.inc" ]; then
-  . "$HOME/.bin/google-cloud-sdk/path.bash.inc"
-fi
-if [ -f "$HOME/.bin/google-cloud-sdk/completion.bash.inc" ]; then
-  . "$HOME/.bin/google-cloud-sdk/completion.bash.inc"
-fi
-
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - bash)"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"

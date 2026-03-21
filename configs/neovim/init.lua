@@ -121,7 +121,7 @@ vim.opt.number = true
 vim.opt.numberwidth = 1
 vim.opt.statuscolumn = "%=%{v:virtnum == 0 ? (v:relnum > 0 ? v:relnum : v:lnum) : ' '} "
 vim.opt.statusline = "%-4l%=%f %2p%%%=%4c"
-vim.opt.cmdheight = 0
+vim.opt.cmdheight = 1
 vim.opt.fillchars = 'eob: '
 
 -- autoformat before save

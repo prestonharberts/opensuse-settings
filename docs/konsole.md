@@ -6,7 +6,7 @@ Run the following to install Konsole:
 sudo dnf install konsole5 -y
 ```
 
-Download `github-light.colorscheme` from [here](https://www.pling.com/p/1574065/), and run `mv ~/Downloads/github-light.colorscheme .local/share/konsole/`.
+Download `github-light.colorscheme` from [here](https://www.pling.com/p/1574065/) or `github-dark.colorscheme` from [here](https://www.pling.com/p/1559572), and run `mv ~/Downloads/github-light.colorscheme ~/.local/share/konsole/`.
 
 Change the following settings from the menubar:
 
@@ -25,8 +25,7 @@ Now, change the following settings under Configure Konsole:
       - General Settings
         - Default profile: On
         - Command: `/bin/bash --login`
-        - Initial terminal size: 84 columns; 30 rows
-        - I use 84 columns because the first 4 are taken up by the gutter in my Neovim config
+        - Initial terminal size: 80 columns; 30 rows
     - Tabs
       - Tab titles
         - Tab title format: `%w`
@@ -38,7 +37,6 @@ Now, change the following settings under Configure Konsole:
       - Miscellaneous
         - Terminal contents
           - Margins: 20 px
-          -  Window > Show Hint for terminal size after resizing: Off
     - Scrolling
       - Scrollback: 100000 lines
       - Scrollbar position: Hidden
