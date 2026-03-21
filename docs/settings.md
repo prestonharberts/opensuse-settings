@@ -91,33 +91,31 @@
   - Colors & Themes
     - Colors
       - Colors: Custom accent color; #6dad27
-      - Colors: openSUSE
-        - Edit Color Scheme...
-          - Colors
-            - Active titlebar: #31363b
-            - Inactive titlebar: #4d5256
     - Application Style: Breeze
       - General
         - Windows' drag mode: Drag windows from all empty areas
       - Scrollbars
         - Top arrow button type: One button
         - Bottom arrow button type: One button
+    - Plasma Style: openSUSEdark
     - Window Decorations
-      - Breeze
-        - General
-          - Title alignment: Left
-          - Draw border on maximized and tiled windows: Off
-        - Shadows and Outline
-          - Shadow size: Very Large
-          - Shadow strength: 75%
-          - Draw window outline: Off
+      - Get New...
+        - Install and enable MacSonoma-Light
+      - Window borders: Tiny window borders
       - Configure Titlebar Buttons
-        - Make the left side have a Spacer
-        - Make the right side have Minimize, Maximize, Close, then a Spacer
+        - Make the left side have Close, Minimize, and Maximize
     - Icons
-      - Follow instructions at top of my WhiteSur Icon fork found [here](https://github.com/prestonharberts/WhiteSur-icon-theme)
+      - Follow instructions at top of my WhiteSur Icon fork found [here](https://github.com/prestonharberts/WhiteSur-icon-theme) or run the following:
+
+```
+cd ~/Repos
+git clone https://github.com/prestonharberts/WhiteSur-icon-theme
+cd WhiteSur-icon-theme
+./install.sh --alternative
+```
+
     - Cursors
-      - Size: (48 if on 200% scaling display)
+      - Size: Adjust if needed (I do 48 if on 200% scaling display)
     - Splash Screen
       - Get New
         - openSUSE
@@ -371,3 +369,13 @@ cmake ..
 cmake --build . -j
 sudo make install
 ```
+
+Open the settings page for it and change the following:
+
+- Roundness
+  - Active Window
+    - Corner Roundness Radius: 10.00
+  - Inactive Window
+    - Corner Roundness Radius: 10.00
+  - Outlines
+    - Primary Outline: Off
