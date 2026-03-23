@@ -101,7 +101,7 @@
     - Window Decorations
       - Get New...
         - Install and enable MacSonoma-Light
-      - Window borders: Tiny window borders
+      - Window borders: Use either the theme default or tiny window borders
       - Configure Titlebar Buttons
         - Make the left side have Close, Minimize, and Maximize
     - Icons
@@ -161,10 +161,23 @@ cd WhiteSur-icon-theme
         - Wobbly Windows: On
       - Get New...
         - Geometry Change (then enable)
+    - Window Rules
+      - Add New...
+        - Description: pip always on top
+        - Window class (application): Unimportant; Leave empty
+        - Window title: Substring match; Picture-in-Picture
+        - Keep above other windows: Force; Yes
+        - Position: Remember
+        - Accept focus: Force; No
+        - No titlebar and frame: Force; No
     - KWin Scripts
       - Get New...
         - Remember Window Positions (then enable)
       - Remember Window Positions
+        - General
+          - Restore virtual desktop: Off
+          - Restore activities: Off
+          - Restore minimized state: Off
         - Blacklist
           - Add `org.kde.konsole`
           - Remove `systemsettings`
@@ -237,45 +250,9 @@ cd WhiteSur-icon-theme
         - Low level: 15%
         - Critical level: 10%
 
-Right-click the top bar, and select Show Panel Configuration. Change the following settings:
+## MediaBar
 
-- Postition: Bottom
-- Panel Height: Adjust as needed
-- Floating: Applets only
-
-Add spacer widgets (with flexible size turned off and width set to 5) to the beginning and end of the top bar, as well as between the Show Activity Manager,Pager buttons, and Icons-Only Task Manager
-
-
-Right-click the workspaces in the top bar, and select Pager Settings. Change the following settings:
-
-- General
-  - General
-    - Navigation wraps around: On
-
-Right-click the system tray dropdown in the top bar, and select Configure System Tray. Change the following settings:
-
-- Entries
-  - Always show all entries (at the bottom of the window): On
-  - Camera Indicator: Disabled
-  - Keyboard Layout: Disabled
-  - Lock Keys Status: Disabled
-  - Media Player: Disabled
-  - Notifications: Shown when relevant
-  - Microphone: Always hidden
-  - Printers: Disabled
-  - Power and Battery: Disabled (only if on desktop)
-  - Solaar: Always hidden
-  - Input Method: Disabled
-
-Right-click the date/time and select Digital Clock Settings. Change the following settings:
-
-- Appearance
-  - Information
-    - Show date: Off
-
-# MediaBar
-
-Install the "MediaBar" widget from the "Get New" button, and edit `~/.local/share/plasma/plasmoids/org.kde.mediabar/contents/ui/CompactRepresentation.qml`.
+Install the "MediaBar" widget from the "Get New..." button, add the widget, then edit `~/.local/share/plasma/plasmoids/org.kde.mediabar/contents/ui/CompactRepresentation.qml`.
 
 - Find the following:
 
@@ -298,9 +275,9 @@ text: {
 
 - Find `text: i18n("No Source")` and remove `No Souce` so it's just empty quotes.
 
-# Window Title Reborn
+## Window Title Reborn
 
-Install the "Window Title Reborn" widget from the "Get New" button.
+Install the "Window Title Reborn" widget from the "Get New..." button. Add the widget, then change the following settings
 
 - When title available: `%a`
 - Hide widget
@@ -311,7 +288,82 @@ Install the "Window Title Reborn" widget from the "Get New" button.
 - Icon
   - Visible: Off
 
-# Wallpaper
+## Panel Config
+
+Right-click the panel, and select Show Panel Configuration. Change the following settings:
+
+- Postition: Top
+- Panel Height: Adjust as needed (I use 32)
+- Floating: Applets only
+- Opacity: Translucent
+
+Make an empty panel and drag the Icons-Only Task Manager widget to this panel. Change the following settings:
+
+- Position: Bottom
+- Panel Height: Adjust as needed (I use 48)
+- Floating: Applets only
+- Width: Fit content
+- Opacity: Translucent
+- Visibility: Dodge windows
+
+Put these widgets for the TOP panel in this order:
+
+1. Panel Spacer (Spacer Width: 5)
+2. Show Activity Manager
+3. Panel Spacer (Spacer Width: 5)
+4. Pager
+5. Panel Spacer (Spacer Width: 5)
+6. Window Title Reborn
+7. Panel Spacer (Spacer Width: 5)
+8. Global Menu
+9. Panel Spacer (Flexible Size)
+
+Right before the System Tray, insert the MediaBar widget.
+
+Put the following apps for the BOTTOM panel in this order:
+
+1. Konsole
+2. Firefox
+3. Dolphin
+4. Obsidian
+5. Todoist
+
+## Pager Widget
+
+Right-click the workspaces in the top bar, and select Pager Settings. Change the following settings:
+
+- General
+  - General
+    - Navigation wraps around: On
+
+## System Tray Widget
+
+Right-click the system tray dropdown in the top bar, and select Configure System Tray. Change the following settings:
+
+- General
+  - Panel icon spacing: Large
+  - Entries
+    - Media Player: Disabled
+    - Notifications: Shown when relevant
+    - Solaar: Always hidden
+
+## Digital Clock Widget
+
+Right-click the date/time and select Digital Clock Settings. Change the following settings:
+
+- Appearance
+  - Information
+    - Show date: Off
+
+## Icons-Only Task Manager
+
+Change the following settings for the Icons-Only Task Manager:
+
+- Behavior
+  - Clicking active task
+    - Minimizes the task: Off
+
+## Wallpaper
 
 Right-click the desktop, and open Desktop and Wallpaper. Change the following settings:
 
@@ -355,7 +407,7 @@ In `~/.config/kwinrc`, add this line under `[Windows]`:
 BorderlessMaximizedWindows=true
 ```
 
-## KDE Rounded Corners
+## KDE Rounded Corners (⚠️ no longer being used)
 
 Run the following to install dependencies and install the KDE Rounded Corners desktop effect:
 

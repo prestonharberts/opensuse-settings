@@ -1,12 +1,9 @@
 # Visual Studio Code
 
-Install VSCodium with the following commands in terminal:
+Install VSCode by visiting the [website](https://code.visualstudio.com/download) and downloading the `.rpm` package. Install it with the following:
 
 ```
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
-dnf check-update
-sudo dnf install code
+sudo zypper install ~/Downloads/vscode-file-name.rpm
 ```
 
 Run the following to copy the desktop app to your local folder to make some changes to the exec command:

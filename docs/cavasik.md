@@ -13,5 +13,3 @@ Change the following settings:
   - Noise Reduction: 0.35
   - Reverse order: Off
   - Frames per Second: Adjust to monitor's maximum refresh rate
-- Colors
-  - Widgets Style: Light

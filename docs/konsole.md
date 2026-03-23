@@ -6,8 +6,6 @@ Run the following to install Konsole:
 sudo dnf install konsole5 -y
 ```
 
-Download `github-light.colorscheme` from [here](https://www.pling.com/p/1574065/) or `github-dark.colorscheme` from [here](https://www.pling.com/p/1559572), and run `mv ~/Downloads/github-light.colorscheme ~/.local/share/konsole/`.
-
 Change the following settings from the menubar:
 
 - Toolbars shown:
@@ -30,7 +28,9 @@ Now, change the following settings under Configure Konsole:
       - Tab titles
         - Tab title format: `%w`
     - Appearance
-      - Color scheme & font: Github Light
+      - Color scheme & font: Breeze
+        - Edit
+          - Randomly adjust colors for each session: On
         - Font: SF Mono (after following the instructions in `sf-font.md`) 10.5pt
       - Cursor
         - Blinking > Enabled: On

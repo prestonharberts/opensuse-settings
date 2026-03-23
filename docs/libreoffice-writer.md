@@ -16,8 +16,7 @@ Change the following settings from the toolbar:
   - Scrollbars
     - Horizontal Scroll Bar: Off
     - Vertical Scroll Bar: Off
-  - Text Boundaries: Off
-  - Table Boundaries: Off
+  - Boundaries: Off
   - Sidebar: Off (toggle if needed)
 - Tools
   - Customize

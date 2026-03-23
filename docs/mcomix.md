@@ -20,9 +20,6 @@ Change the following settings from Preferences:
 - Behaviour
   - Files
     - Automatically open the last viewed file on startup: On
-- Display
-  - Fullscreen
-    - Use fullscreen by default: On (only if titlebar is present)
 - Shortcuts
   - Navigation
     - Back ten pages: `h` (Key 1)

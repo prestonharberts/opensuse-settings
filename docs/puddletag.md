@@ -4,7 +4,7 @@ Run the following to install puddletag and its dependencies:
 
 ```
 # some of these packages may not exist on zypper repositories
-sudo zypper install -y python313-mutagen python313-configobj python313-pyparsing python313-Unidecode python313-qt6 python313-qt6-svg
+sudo zypper install -y python313-PyQt6-Qt6Svg python313-mutagen python313-Unidecode python313-mutagen python313-configobj python313-pyparsing python313-Unidecode python313-qt6 python313-qt6-svg
 cd ~/Repos/
 git clone 'https://github.com/puddletag/puddletag'
 cd 'puddletag'

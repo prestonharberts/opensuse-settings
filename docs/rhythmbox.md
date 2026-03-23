@@ -1,5 +1,11 @@
 # Rhythmbox
 
+Run the following to install Rhythmbox:
+
+```
+sudo zypper -n install rhythmbox
+```
+
 Close the top box when asked to select the music location.
 
 Open the application menu, and change the following settings:
@@ -10,24 +16,13 @@ Open the application menu, and change the following settings:
 Open Preferences, and change the following settings:
 
 - General
+  - Browser Views: Genres, artists and albums
   - Visible Columns
     - Year: On
     - Rating: On
 - Music
   - Library Structure
     - Preferred format: FLAC
-- Plugins
-  - Song Lyrics: On
-    - Preferences
-      - Search engines
-        - TerraBrasil: On
-        - Dark Lyrics: On
-        - Jlyric: On
-        - Jetlyrics: On
-      - Lyrics folder: `~/Music/lyrics`
-  - Web remote control
-    - Preferences
-      - Access key: Create password
 
 Run the following if you have already synced playlists and ratings with Tresorit:
 

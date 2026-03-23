@@ -39,16 +39,17 @@ Change the following in Settings:
     - Safe Browsing
       - Enhanced protection
     - Secure connections
-      - Always use secure connections: On
 - Performance
   - Memory
     - Memory Saver: On
 - Appearance
   - Theme: Classic
     - Appearance: Second color option (should have the white top bar)
+  - Show home button: On
   - Use system title bar and borders: On
 - Search engine
   - Search engine: DuckDuckGo
+    - Change DuckDuckGo settings to match Firefox
 
 ## Extensions
 
@@ -58,31 +59,12 @@ Open the [Chrome Web Store](https://chromewebstore.google.com/) and install the 
   - Activate the extension: Alt+L
 - Don't Close Window With Last Tab by Marcel Dopita
 - OneTab by OneTab Team
+- uBlock Origin Lite by Raymond Hill
 
 ### Bitwarden
 
-Click the Bitwarden extension button, and log in (making sure to check the remember login information), and go to Settings. Change the following setting:
-
-- Other
-	- Options
-		- Autofill
-          - Autofill suggestions
-            - Show autofill suggestions as form fields: Off
-            - Show identities suggestions as Autofill suggestions on Vault view
-            - Click items to autofill on Vault view
-		  - Additional options
-			- Clear clipboard: 2 minutes
-        - Notifications
-          - Save to vault options
-            - Ask to save and use passkeys: Off
-            - Ask to add login: Off
-            - Ask to update existing login: Off
-        - Appearance
-          - Compact mode: On
-          - Show quick copy options on Vault
+Change settings to match DuckDuckGo.
 
 ### OneTab
 
-Click the OneTab extension icon, and unpin the newly created tab. Change the following settings:
-
-- Startup: Do not open OneTab automatically
+Change settings to match DuckDuckGo.

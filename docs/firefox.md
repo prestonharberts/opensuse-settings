@@ -51,28 +51,39 @@ Open Application Menu, and open Settings. Change the following settings:
 - Privacy & Security
 	- Enhanced Tracking Protection: Strict
         - Tell websites not to sell or share my data: On
-		- Send websites a "Do Not Track" signal that you don't want to be tracked: On
 	- Passwords
 		- Ask to passwords: Off
+    - Payment methods
+      - Save and autofill payment info: Off
+    - Addresses and more
+      - Save and autofill addresses: Off
 	- Forms and Autofill
-		- Save and fill addresses: Off
-		- Save and fill payment methods: Off
+	  - Save and fill addresses: Off
+	  - Save and fill payment methods: Off
+    - Permissions
+      - Notifications
+        - Block new requests asking to allow notifications: On
 	- Firefox Data Collection and Use
-		- Allow Firefox to send technical and interation data to Mozilla: Off
-		- Allow Firefox to install and run studies: Off
+	  - Send technical and interation data to Mozilla: Off
+      - Allow Firefox to improve features, performance, and stability between updates: Off
+- Extensions & Themes
+  - Themes
+    - Download and enable MacOS Light Grey by Maulbeerblatt
 
 ## Customize Toolbar
 
-Right click empty space on the toolbar (same bar as the search bar), and go to Customize Toolbar. Complete the following actions:
+Right click empty space on the search bar, and go to Customize Toolbar. Change the following:
 
-- Insert one additional Flexible Space on both sides of the search bar
+- Insert one Flexible Space on both sides of the search bar if not already there
 - Remove the Firefox account button
-- Remove the Homepage button
-- Put "Save to Pocket" and "Show tabs from other devices" before the extension button
-
-Right click an empty space on the Bookmarks toolbar. Change the following setting:
-
-- Bookmarks Toolbar: Never show
+- Remove the Collections button
+- Unpin all extensions
+- Add Synced Tabs after the Extensions button
+- Right click the Downloads button
+  - Hide Button When Empty: Off
+- Right click the Bookmarks toolbar
+  - Bookmarks Toolbar: Only Show on New Tab
+- Title Bar: On
 
 ## Extensions
 
@@ -94,7 +105,6 @@ Open Settings, and click the Extensions & Themes button at the bottom. Under the
   - Add to Todoist shortcut: Alt+A
 - TWP - Translate Web Pages by Filipe Dev
 - uBlock Origin by Raymond Hill
-	- When prompted, allow to run in private windows
 - UltraWideo by dvlden
 
 ### Bitwarden
@@ -108,8 +118,9 @@ Click the Bitwarden extension button, and log in (making sure to check the remem
            - Timeout: 15 minutes
 		- Autofill
           - Autofill suggestions
-            - Show autofill suggestions as form fields: Off
-            - Show identities suggestions as Autofill suggestions on Vault view: Off
+            - Display identities as suggestions: Off
+            - Always show cards as Autofill suggestions on Vault view
+            - Always show identities as Autofill suggestions on Vault view
 		  - Additional options
 			- Clear clipboard: 2 minutes
         - Notifications
@@ -135,22 +146,19 @@ Click the Enhancer for YouTube extension button, and change the following settin
 - Theme
   - Dark theme: On (if wanted); YouTube-DeepDark (custom)
     - YouTube DeepDark (custom): ff0000; #242424; #292929; #454545
-- Video player
-	- Controls
-      - Disable all controls
-	- Playback quality
-		- Automatically select a playback quality: On
-			- Select a different playback quality when entering the full screen mode: On
-				- Videos (full screen): Use monitor resolution
-				- Playlists (full screen): Use monitor resolution
-				- Pop-up player and embedded videos (full screen): Use monitor resolution
-            - Switch back to the previous playback quality when exiting the full screen mode: On
-	- Autoplay
-		- Disable autoplay: On
+- Controls
+  - Disable all controls
+- Playback quality
+  - Automatically select a playback quality: On
+    - Videos: 720p
+    - Playlists: 720p
+    - Embedded videos: 720p
+    - Select a different playback quality when entering the full screen mode
+      - Videos (full screen): 2160p 4K
+      - Playlists (full screen): 2160p 4K
+      - Embedded videos (full screen) 2160p 4K
 - Appearance
   - Use the available space based on the viewport dimensions to expand the video player: On
-  - Hide chat: On
-  - Hide Shorts: On (Change `layout.css.has-selector.enabled` to `true` in about:config)
 
 ### OneTab
 
@@ -164,41 +172,37 @@ Follow the instructions presented by this extension when prompted. Make web apps
 
 - https://calendar.google.com/calendar/
 - https://docs.google.com/document/
-- https://youtube.com
+- https://www.youtube.com
 - https://app.logos.com
 - https://devdocs.io
-- https://notebooklm.google.com/?original_referer=https:%2F%2Fnotebooklm.google%23&pli=1
+- https://notebooklm.google.com/
 - https://monkeytype.com/
-  - Icon URL: https://img.icons8.com/?size=100&id=FBO05Dys9QCg&format=png&color=000000
 - https://music.youtube.com
-- https://play.qobuz.com (if subscribed)
-  - Name: Qobuz
-  - Icon URL: https://external-content.duckduckgo.com/ip3/www.qobuz.com.ico
 - https://mail.tutanota.com/mail/
 - TODO: Add URLs for these too `Crunchyroll, Disney+, Hulu, Max, Netflix, Paramount+, Prime Video, Tubi`
-  - Prime video
-    - Icon URL: https://img.icons8.com/?size=100&id=mJTj7Q9EPSVn&format=png&color=000000
 
-Now, sign in to your Firefox account to sync extensions. Sign out of your account once everything is synced, restart the app, and uninstall everything but these extensions:
+Change the app icons to custom ones in `config/icons`.
 
-- Bitwarden - Free Password Manager 
-- Cookie AutoDelete 
-- CSS Override by swcolegrove
-- Enter Key For AI by SuperJohn
-- Return YouTube Dislike 
-- SponsorBlock - Skip Sponsorships on YouTube 
-- uBlock Origin 
-
-Install the hide-scrollbars extension by qashto from the Firefox Add-Ons website.
+Now, sign in to your Firefox account to sync extensions and settings.
 
 Change Firefox's application settings to follow this guide, and then adjust these settings apart from the other settings:
 
 - General
   - Progressive Web Apps
+    - Allow web apps to override a theme (titlebar) color: Off
+    - Allow web apps to override a background (window) color: Off
+    - Allow web apps to dynamically change a theme color: Off
+    - Always use native window controls: On
+    - Open out-of-scope URLs in a default browser (can break some web apps): On
+    - When launching a web app that is already opened: Focus the existing window
     - Display the address bar: Never
+    - Keyboard Shortcuts
+      - Close tab: Off
+      - Close window: Off
+      - Quit application: Off
+      - Private browsing: Off
+      - Keep playing video in Picture-in-Picture when switching tabs: On
 - Privacy & Security
-  - Browser Privacy
-    - Enhanced Tracking Protection: Standard
   - Permissions
     - Location
       - Settings
@@ -215,6 +219,14 @@ Change Firefox's application settings to follow this guide, and then adjust thes
     - Virtual Reality
       - Settings
         - Block new requests asking to access your location
+- Extensions & Themes
+  - Extensions
+    - Manage Extension Shortcuts
+      - Disable all shortcuts except for Bitwarden
+
+Right click empty space on the search bar, and go to Customize Toolbar. Change the following:
+
+- Title Bar: On
 
 For the following websites, change the following settings:
 
@@ -222,6 +234,8 @@ For the following websites, change the following settings:
   - Website preferences
     - General
       - Automatically download documentation for offline use: On
+
+Change all the settings for installed extensions because we will hide the titlebar in the next step.
 
 Once all this is set up, open `about:support` and open the profile directory in a terminal. Create `chrome/userChrome.css` and paste the following into it to hide the titlebar ([source](https://superuser.com/a/1619663)):
 
@@ -236,7 +250,13 @@ Once all this is set up, open `about:support` and open the profile directory in 
 }
 ```
 
-Now, open `about:config`, and set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`, as well as these VA-API settings listed later in this document:
+Now, open `about:config`, and change the following:
+
+```
+toolkit.legacyUserProfileCustomizations.stylesheets = true
+```
+
+As well as these settings listed later in this document:
 
 ```
 media.ffmpeg.vaapi.enabled = true
@@ -263,10 +283,6 @@ Go to Settings, and change the following settings:
 	- Default download path: `~/Downloads`
 	- Desktop integration: Activated
 
-## Netflix 1080p
-
-Follow the directions [here](https://github.com/vladikoff/netflix-1080p-firefox/issues/63), downloading the file, renaming the file extension from `.zip` to `.xpi`, and installing it manually from the Firefox extensions page.
-
 ## TWP - Translate Web Pages by Filipe Dev
 
 Change the following settings in the extension's menu:
@@ -291,6 +307,7 @@ Also change the following from `about:config`:
 browser.tabs.closeWindowWithLastTab = false
 browser.tabs.insertAfterCurrent = true
 screenshots.browser.component.enabled = false
+extensions.screenshots.disabled = true
 widget.gtk.global-menu.enabled = true
 ```
 
@@ -314,7 +331,7 @@ Change the following settings for the DuckDuckGo search engine settings page:
   - Center Alignment: On
   - Background Color: #242424 (dark)
   - Header Behavior: On & Scrolling
-  - Header Color: #292929 or #ebebeb (light)
+  - Header Color: #292929 or #eff0f1 (light)
   - Title Font: Custom; SF Pro Text (after following `fonts.md`)
   - Title Color: #87f1f3 (dark) or #438de6 (light)
   - Visited Title Color: #888888 (dark) or #869bb3 (light)
@@ -327,3 +344,7 @@ Change the following settings for the DuckDuckGo search engine settings page:
   - 'Always private' Reminder: Off
 - Privacy
   - Video Playback: Open on third-party site
+
+## Netflix 1080p (I no longer use)
+
+Follow the directions [here](https://github.com/vladikoff/netflix-1080p-firefox/issues/63), downloading the file, renaming the file extension from `.zip` to `.xpi`, and installing it manually from the Firefox extensions page.

@@ -10,7 +10,7 @@ Use "Open With..." and then select Showfoto to edit photos.
 
 ## Showfoto
 
-Collapse the left sidebar by clicking on the open icon.
+Collapse the left sidebar by clicking on the selected tab on the left.
 
 Change the following settings from the Settings menubar dropdown:
 
