@@ -8,7 +8,7 @@
     - Bottom-Left Corner: Present Windows (All Desktops)
     - Bottom-Right Corner: Peek at Desktop
     - Activation delay: 0ms
-    - Reactivation delay: 50ms
+    - Reactivation delay: 0ms
 - Input & Output
   - Keyboard
     - Shortcuts
@@ -165,11 +165,12 @@ cd WhiteSur-icon-theme
       - Add New...
         - Description: pip always on top
         - Window class (application): Unimportant; Leave empty
+        - Position: Remember
+        - Virtual desktops: Force; All desktops
         - Window title: Substring match; Picture-in-Picture
         - Keep above other windows: Force; Yes
-        - Position: Remember
-        - Accept focus: Force; No
         - No titlebar and frame: Force; No
+        - Accept focus: Force; No
     - KWin Scripts
       - Get New...
         - Remember Window Positions (then enable)
@@ -280,8 +281,7 @@ text: {
 Install the "Window Title Reborn" widget from the "Get New..." button. Add the widget, then change the following settings
 
 - When title available: `%a`
-- Hide widget
- - When title unavailable: On
+- When title unavailable: Enter host name
 - Text Formatting
   - Font size: Increase by 1
   - Bold: On

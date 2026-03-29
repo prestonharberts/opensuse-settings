@@ -7,3 +7,4 @@ Complete the following tasks:
 - Remove Utilities folder from app grid and add any necessary folders
 - Run `systemctl disable iscsi` to speedup boot if not using network block device
 - Open multiple tabs in Dolphin and Konsole, then close them with `Super-Q`. Select do not ask again, and then select close Dolphin/Konsole
+- Remove the folder `~/Templates`

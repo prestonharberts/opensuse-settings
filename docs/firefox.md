@@ -13,7 +13,6 @@ Open Application Menu, and open Settings. Change the following settings:
   - Browser Layout
     - Show sidebar: Off
   - Browsing
-    - Search for text when you start typing: On
     - Keep playing videos in Picture-in-Picture when switching tabs: On
 - Home
     - New Windows and Tabs
@@ -264,6 +263,7 @@ media.ffvpx.enabled = false
 media.rdd-vpx.enabled = false
 extensions.screenshots.disabled = true
 widget.gtk.global-menu.enabled = true
+widget.gtk.global-menu.wayland.enabled = true
 ```
 
 ### Tutanota
@@ -309,6 +309,7 @@ browser.tabs.insertAfterCurrent = true
 screenshots.browser.component.enabled = false
 extensions.screenshots.disabled = true
 widget.gtk.global-menu.enabled = true
+widget.gtk.global-menu.wayland.enabled = true
 ```
 
 ## DuckDuckGo settings
@@ -327,11 +328,11 @@ Change the following settings for the DuckDuckGo search engine settings page:
   - Help Improve DuckDuckGo: Off
 - Appearance
   - Theme: Terminal (dark)
-  - Font: Custom; SF Pro Text (after following `fonts.md`)
+  - Font: Custom; SF Pro Display (after following `fonts.md`)
   - Center Alignment: On
   - Background Color: #242424 (dark)
   - Header Behavior: On & Scrolling
-  - Header Color: #292929 or #eff0f1 (light)
+  - Header Color: #292929 or #eff0f0 (light)
   - Title Font: Custom; SF Pro Text (after following `fonts.md`)
   - Title Color: #87f1f3 (dark) or #438de6 (light)
   - Visited Title Color: #888888 (dark) or #869bb3 (light)
