@@ -250,6 +250,10 @@ cd WhiteSur-icon-theme
       - Battery Levels
         - Low level: 15%
         - Critical level: 10%
+  - Session
+    - Desktop Session
+      - Session Restore
+        - Ignored applications: `plasma-discover.discover,systemsettings.systemsettings`
 
 ## MediaBar
 
@@ -431,3 +435,19 @@ Open the settings page for it and change the following:
     - Corner Roundness Radius: 10.00
   - Outlines
     - Primary Outline: Off
+
+## Stop Discover from Autostarting
+
+Run the following to copy the autostart file for the Discover store to the user autostart folder to make some changes:
+
+```
+sudo cp /etc/xdg/autostartorg.kde.discover.notifier.desktop /home/prestonharberts/.config/autostart/
+```
+
+Run the following to edit:
+
+```
+vi ~/.config/autostart/org.kde.discover.notifier.desktop
+```
+
+Delete the line the begins with `exec`.
