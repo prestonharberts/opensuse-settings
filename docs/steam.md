@@ -20,6 +20,14 @@ Change the following settings:
 - Remote Play
   - Enable Remote Play: Off
 
+## Select proper GPU
+
+Make a desktop shortcut for Steam, then insert `prime-run` in the Exec line in the file. Then, copy it to the applications folder with this command:
+
+```
+cp ~/Desktop/steam.desktop ~/.local/share/applications/
+```
+
 ## Gamescope (I no longer use)
 
 Run the following to install Steam and other utilities:

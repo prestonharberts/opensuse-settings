@@ -105,6 +105,7 @@ Open Settings, and click the Extensions & Themes button at the bottom. Under the
 - TWP - Translate Web Pages by Filipe Dev
 - uBlock Origin by Raymond Hill
 - UltraWideo by dvlden
+- Windscribe by Windscribe
 
 ### Bitwarden
 
