@@ -49,8 +49,8 @@
       - Keep Window on All Desktop: `Meta+C`
       - Maximize Window: `Meta+W`
       - Window Operations Menu: `Meta+Space`
-      - Lock Session: `Meta+Shift+L`
-      - Log Out: `Meta+Ctrl+Shift+L`
+      - Log Out: `Meta+Ctrl+Shift+Esc`
+      - Lock Session: `Meta+Ctrl+Shift+L`
       - Krunner
         - Launch: Meta
       - plasmashell
@@ -253,7 +253,7 @@ cd WhiteSur-icon-theme
   - Session
     - Desktop Session
       - Session Restore
-        - Ignored applications: `plasma-discover.discover,systemsettings.systemsettings`
+        - Ignored applications: `org.kde.discover.desktop,systemsettings.desktop,steam,com.mastermindzh.tidal-hifi.desktop,org.kde.dolphin.desktop,org.kde.konsole.desktop,firefox.desktop,firefox`
 
 ## MediaBar
 

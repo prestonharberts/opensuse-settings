@@ -81,6 +81,7 @@ Install the following extensions:
 
 - Bash IDE by mads-hartmann
 - Create by HiDeoo
+- Current Folder in Status Bar
 - Error Lens by usernamehw
 - Flutter by Dart-Code
 - Live Server by ritwickdey
@@ -90,6 +91,7 @@ Install the following extensions:
 - clangd by LLVM (install clangd when propted; you may have to open a .cpp file first in which case also press `Ctrl+Shift+P` and enter "clangd: Toggle inlay hints")
 - statusbar-commands by Andreas Weber
 - Indenticator by SirTori
+- Where Am I? by Anthony Fu
 
 Also install shfmt by Martin Kühl. Then, run `go install mvdan.cc/sh/v3/cmd/shfmt@latest` to install the dependency. The directory `~/go/bin/` may need to be added to your PATH if it is not already.
 
@@ -158,13 +160,13 @@ Press `Ctrl+Shift+P` and enter "Open User Settings (JSON)." Then, add a comma to
 
   "statusbar_command.commands": [
       {
-          "text": "$(folder)",
-          "tooltip": "Open Containing Folder",
+          "text": "$(symbol-constant)",
+          "tooltip": "Copy File Path",
           "id": "sbc_folder",
           "name": "sbc_folder",
           "priority": 1,
           "alignment": "left",
-          "command": "revealFileInOS"
+          "command": "copyPathNotify.copyPath"
       },
       {
           "text": "$(gear)",

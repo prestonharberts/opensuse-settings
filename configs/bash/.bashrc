@@ -122,6 +122,7 @@ alias fup='flatpak upgrade -y'
 alias plasma='killall plasmashell && kstart plasmashell'
 alias restart-sddm='sudo systemctl restart sddm'
 alias clean-konsole='for i in {1..100}; do echo; done; unclutter &'
+alias id-desktop='qdbus6 org.kde.KWin /KWin org.kde.KWin.showDebugConsole'
 
 # frequently used commands: virtual machines
 alias tw='sudo virsh start opensuse && sudo virt-viewer opensuse'
@@ -146,8 +147,12 @@ export BROWSER="google-chrome --password-store=basic"
 
 clear
 echo
-fastfetch -s title:separator:os:host:kernel:uptime:packages:shell:display:de:wm:cpu:gpu:memory:swap:disl:battery:locale --logo opensuse
+fastfetch --pipe false -s title:separator:os:host:kernel:uptime:packages:shell:display:de:wm:cpu:gpu:memory:swap:battery:locale --logo opensuse | perl -pe 's/^((?:(?:\e\[[0-9;]*[mK])|.){1,90}).*/$1\e[0m/'
 echo
+
+# frequently used commands: gaming
+alias crt='kscreen-doctor output.DP-2.enable output.DP-2.mode.54 output.DP-2.position.3440,0 && sunshine &'
+alias kss='pkill sunshine -9 && kscreen-doctor output.DP-2.disable'
 
 # Steam exFAT SSD Library Paths
 export STEAM_EXT_LIB="/run/media/prestonharberts/ExternalSSD/SteamLibrary/steamapps/"
